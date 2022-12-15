@@ -1,6 +1,9 @@
 <template>
-  <div>
-  </div>
+  <HeroSection />
+  <AboutSection />
+  <ResumeSection />
+  <OnlineSection />
+  <ContactSection />
 </template>
 
 <script setup lang="ts">

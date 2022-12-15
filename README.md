@@ -1,42 +1,44 @@
-# Nuxt 3 Minimal Starter
+# Callum Watkins Website
+Made with [Nuxt 3](https://nuxt.com/docs/getting-started/introduction).
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+## Prerequisites
+### Build
+- Node.js 18.12
+
+### Dev
+- Visual Studio Code
+- 'Vue Language Features (Volar)' extension + Takeover Mode
+- 'EditorConfig for VS Code' extension
 
 ## Setup
-
-Make sure to install the dependencies:
+Install dependencies:
 
 ```bash
-# yarn
-yarn install
-
-# npm
 npm install
-
-# pnpm
-pnpm install --shamefully-hoist
 ```
 
 ## Development Server
-
-Start the development server on http://localhost:3000
+Start the development server on http://localhost:3000:
 
 ```bash
 npm run dev
 ```
 
 ## Production
-
 Build the application for production:
 
 ```bash
 npm run build
 ```
 
-Locally preview production build:
+Locally preview a production build:
 
 ```bash
 npm run preview
 ```
 
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+### Cloudflare Pages
+Changes to the master branch are published automatically via [Cloudflare Pages](https://pages.cloudflare.com/). Pull requests to the master branch from this repository will automatically generate a preview deployment.
+
+[[Nuxt deployment documentation](https://nuxt.com/docs/getting-started/deployment)]
+[[Nitro Cloudflare Pages preset](https://nitro.unjs.io/deploy/providers/cloudflare#cloudflare-pages)].

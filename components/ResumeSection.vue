@@ -15,7 +15,7 @@
         <div class="timeline-wrap">
           <div class="timeline-block">
             <div class="timeline-ico">
-              <i class="fas fa-graduation-cap"></i>
+              <FontAwesomeIcon icon="fa-solid fa-graduation-cap" />
             </div>
             <div class="timeline-header">
               <h3>BSc Computer Science</h3>
@@ -35,7 +35,7 @@
           </div>
           <div class="timeline-block">
             <div class="timeline-ico">
-              <i class="fas fa-graduation-cap"></i>
+              <FontAwesomeIcon icon="fa-solid fa-school" />
             </div>
             <div class="timeline-header">
               <h3>GCE Advanced Level</h3>
@@ -53,7 +53,7 @@
           </div>
           <div class="timeline-block">
             <div class="timeline-ico">
-              <i class="fas fa-graduation-cap"></i>
+              <FontAwesomeIcon icon="fa-solid fa-school" />
             </div>
             <div class="timeline-header">
               <h3>GCE Advanced Subsidiary Level</h3>
@@ -72,7 +72,7 @@
           </div>
           <div class="timeline-block">
             <div class="timeline-ico">
-              <i class="fas fa-graduation-cap"></i>
+              <FontAwesomeIcon icon="fa-solid fa-school" />
             </div>
             <div class="timeline-header">
               <h3>GCSE</h3>
@@ -107,7 +107,7 @@
         <div class="timeline-wrap">
           <div class="timeline-block">
             <div class="timeline-ico">
-              <i class="fas fa-briefcase"></i>
+              <FontAwesomeIcon icon="fa-solid fa-briefcase" />
             </div>
             <div class="timeline-header">
               <h3>Software Developer & Accounting Clerk</h3>
@@ -120,7 +120,7 @@
           </div>
           <div class="timeline-block">
             <div class="timeline-ico">
-              <i class="fas fa-briefcase"></i>
+              <FontAwesomeIcon icon="fa-solid fa-briefcase" />
             </div>
             <div class="timeline-header">
               <h3>Software Developer</h3>
@@ -133,7 +133,7 @@
           </div>
           <div class="timeline-block">
             <div class="timeline-ico">
-              <i class="fas fa-briefcase"></i>
+              <FontAwesomeIcon icon="fa-solid fa-briefcase" />
             </div>
             <div class="timeline-header">
               <h3>Clerical Assistant</h3>

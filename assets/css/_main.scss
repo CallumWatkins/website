@@ -2169,21 +2169,16 @@ header .logo a {
 #resume .timeline-ico {
   height: 4.8rem;
   width: 4.8rem;
-  line-height: 4.8rem;
   background: var(--grey-81);
   border-radius: 50%;
-  text-align: center;
   color: white;
   position: absolute;
   left: 35%;
   top: 0.9rem;
   margin-left: -2.4rem;
-}
-
-#resume .timeline-ico i {
-  position: relative;
-  left: 0.05rem;
-  top: 0.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #resume .timeline-header {
@@ -2313,7 +2308,6 @@ header .logo a {
   #resume .timeline-ico {
     height: 3.6rem;
     width: 3.6rem;
-    line-height: 3.6rem;
     left: 1.8rem;
     margin-left: -1.8rem;
     font-size: 1.5rem;

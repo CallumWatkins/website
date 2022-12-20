@@ -8,9 +8,17 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 
 import {
+  faEnvelope,
 } from '@fortawesome/free-regular-svg-icons';
 
 import {
+  faTelegram,
+  faKeybase,
+  faTwitter,
+  faGithub,
+  faStackOverflow,
+  faLinkedinIn,
+  faPaypal,
 } from '@fortawesome/free-brands-svg-icons';
 
 config.autoAddCss = false;
@@ -19,6 +27,14 @@ library.add(
   faGraduationCap,
   faSchool,
   faBriefcase,
+  faEnvelope,
+  faTelegram,
+  faKeybase,
+  faTwitter,
+  faGithub,
+  faStackOverflow,
+  faLinkedinIn,
+  faPaypal,
 );
 
 export default defineNuxtPlugin((nuxtApp) => {

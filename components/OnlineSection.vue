@@ -28,16 +28,16 @@
             </div>
             <div class="info">
               <div class="name">CallumWatkins</div>
-              <div class="meta">
+              <div class="meta" v-if="gitHubFlairData">
                 <span title="Total Public Repositories">
                   <svg viewBox="0 0 12 16">
                     <path fill-rule="evenodd" d="M4 9H3V8h1v1zm0-3H3v1h1V6zm0-2H3v1h1V4zm0-2H3v1h1V2zm8-1v12c0 .55-.45 1-1 1H6v2l-1.5-1.5L3 16v-2H1c-.55 0-1-.45-1-1V1c0-.55.45-1 1-1h10c.55 0 1 .45 1 1zm-1 10H1v2h2v-1h3v1h5v-2zm0-10H2v9h9V1z"></path>
-                  </svg> <span class="repos"></span>&nbsp;&nbsp;
+                  </svg> {{ gitHubFlairData.public_repos}}&nbsp;&nbsp;
                 </span>
                 <span title="Total Public Gists">
                   <svg viewBox="0 0 12 16">
                     <path fill-rule="evenodd" d="M7.5 5L10 7.5 7.5 10l-.75-.75L8.5 7.5 6.75 5.75 7.5 5zm-3 0L2 7.5 4.5 10l.75-.75L3.5 7.5l1.75-1.75L4.5 5zM0 13V2c0-.55.45-1 1-1h10c.55 0 1 .45 1 1v11c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1zm1 0h10V2H1v11z"></path>
-                  </svg> <span class="gists"></span>
+                  </svg> {{ gitHubFlairData.public_gists }}
                 </span>
               </div>
             </div>
@@ -47,3 +47,19 @@
     </div>
   </section>
 </template>
+
+<script setup lang="ts">
+import { Endpoints as GitHubEndpoints } from "@octokit/types";
+
+const { data: gitHubFlairData } = useLazyFetch<GitHubEndpoints['GET /users/{username}']['response']['data']>(
+  'https://api.github.com/users/CallumWatkins',
+  {
+    headers: {
+      'Accept': 'application/vnd.github+json',
+      // 'X-GitHub-Api-Version': '2022-11-28', // TODO: Reintroduce this header once GitHub has fixed their CORS https://github.com/community/community/discussions/40619
+    },
+    pick: [ 'public_repos', 'public_gists' ],
+    server: false,
+  },
+);
+</script>

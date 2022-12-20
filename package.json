@@ -8,6 +8,7 @@
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
+    "@octokit/types": "^8.0.0",
     "nuxt": "3.0.0",
     "sass": "^1.57.0"
   },

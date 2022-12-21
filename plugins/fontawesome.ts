@@ -5,6 +5,9 @@ import {
   faGraduationCap,
   faSchool,
   faBriefcase,
+  faCircle,
+  faStar,
+  faCodeCommit,
 } from '@fortawesome/free-solid-svg-icons';
 
 import {
@@ -27,6 +30,9 @@ library.add(
   faGraduationCap,
   faSchool,
   faBriefcase,
+  faCircle,
+  faStar,
+  faCodeCommit,
   faEnvelope,
   faTelegram,
   faKeybase,

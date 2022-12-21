@@ -1,26 +1,26 @@
 <template>
-  <a :href="`https://github.com/${username}`" target="_blank" rel="noopener me">
-    <div class="github-flair">
-      <svg title="GitHub Flair" viewBox="0 0 250 250">
-        <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
-        <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor"></path>
-      </svg>
-      <div class="avatar">
-        <img src="@/assets/images/logos/CW_Logo.svg" alt="Profile Avatar">
-      </div>
-      <div class="info">
-        <div class="name">{{ username }}</div>
-        <div class="meta" v-if="data">
-          <span title="Total Public Repositories">
-            <svg viewBox="0 0 12 16">
-              <path fill-rule="evenodd" d="M4 9H3V8h1v1zm0-3H3v1h1V6zm0-2H3v1h1V4zm0-2H3v1h1V2zm8-1v12c0 .55-.45 1-1 1H6v2l-1.5-1.5L3 16v-2H1c-.55 0-1-.45-1-1V1c0-.55.45-1 1-1h10c.55 0 1 .45 1 1zm-1 10H1v2h2v-1h3v1h5v-2zm0-10H2v9h9V1z"></path>
-            </svg> {{ data.public_repos}}&nbsp;&nbsp;
-          </span>
-          <span title="Total Public Gists">
-            <svg viewBox="0 0 12 16">
-              <path fill-rule="evenodd" d="M7.5 5L10 7.5 7.5 10l-.75-.75L8.5 7.5 6.75 5.75 7.5 5zm-3 0L2 7.5 4.5 10l.75-.75L3.5 7.5l1.75-1.75L4.5 5zM0 13V2c0-.55.45-1 1-1h10c.55 0 1 .45 1 1v11c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1zm1 0h10V2H1v11z"></path>
-            </svg> {{ data.public_gists }}
-          </span>
+  <a href="https://github.com/CallumWatkins" target="_blank" rel="noopener me">
+    <div class="flair">
+      <div class="flair__grid">
+        <div class="flair__profile-picture">
+          <img src="@/assets/images/logos/CW_Logo.svg">
+        </div>
+        <div class="flair__service-logo">
+          <img src="@/assets/images/github-mark-white.svg" />
+        </div>
+        <div class="flair__name">Callum Watkins</div>
+        <div class="flair__details" v-if="data">
+          <div class="flair__contributions">
+            <div><FontAwesomeIcon icon="fa-solid fa-code-commit" size="xs" /> {{ data.data.user.contributionsCollection.contributionCalendar.totalContributions.toLocaleString() }} contributions in the last year</div>
+          </div>
+          <div class="flair__questions-answers">
+            <div><span>{{ data.data.user.repositories.totalCount }}</span> Repositories</div>
+            <div><span>{{ data.data.user.gists.totalCount }}</span> Gists</div>
+            <div><span>{{ new Date(Date.now() - Date.parse(data.data.user.createdAt)).getUTCFullYear() - 1970 }}</span> Years</div>
+          </div>
+        </div>
+        <div class="flair__details" v-else>
+          Loading...
         </div>
       </div>
     </div>
@@ -28,19 +28,116 @@
 </template>
 
 <script setup lang="ts">
-import { Endpoints as GitHubEndpoints } from "@octokit/types";
-
-const username = 'CallumWatkins';
-
-const { data } = useLazyFetch<GitHubEndpoints['GET /users/{username}']['response']['data']>(
-  `https://api.github.com/users/${username}`,
+const { data } = useLazyFetch<GHResponse>(
+  '/api/github',
   {
-    headers: {
-      'Accept': 'application/vnd.github+json',
-      // 'X-GitHub-Api-Version': '2022-11-28', // TODO: Reintroduce this header once GitHub has fixed their CORS https://github.com/community/community/discussions/40619
-    },
-    pick: [ 'public_repos', 'public_gists' ],
     server: false,
   },
 );
+
+interface GHResponse {
+  data: GHData;
+}
+
+interface GHData {
+  user: GHUser;
+}
+
+interface GHUser {
+  contributionsCollection: GHContributionsCollection;
+  repositories: GHRepositories;
+  gists: GHGists;
+  createdAt: string;
+}
+
+interface GHContributionsCollection {
+  contributionCalendar: GHContributionCalendar;
+}
+
+interface GHContributionCalendar {
+  totalContributions: number;
+}
+
+interface GHRepositories {
+  totalCount: number;
+}
+
+interface GHGists {
+  totalCount: number;
+}
 </script>
+
+<style lang="scss" scoped>
+a:focus, a:hover {
+  .flair {
+    transform: translateY(-4px);
+    box-shadow: 0px 5px 5px 1px rgba(150,150,150,1);
+  }
+}
+
+.flair {
+  padding: 1rem;
+  background-color: #2d2d2d;
+  transition: all 0.25s ease-out;
+  text-align: left;
+
+  &__grid {
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI Adjusted", "Segoe UI", "Liberation Sans", sans-serif;
+    width: 31rem;
+    height: 6rem;
+    display: grid;
+    grid-template-columns: 6rem 1fr 2.5rem;
+    grid-template-rows: 2.5rem 1fr;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "profile-picture name service-logo"
+      "profile-picture details details";
+  }
+
+  &__profile-picture {
+    grid-area: profile-picture;
+  }
+
+  &__service-logo {
+    grid-area: service-logo;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &__name {
+    grid-area: name;
+    display: flex;
+    font-weight: bold;
+    align-items: center;
+    padding-left: 1rem;
+  }
+
+  &__details {
+    grid-area: details;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 0.2rem;
+    padding-left: 1rem;
+    line-height: 1.6rem;
+    font-size: 1.4rem;
+  }
+
+  &__contributions {
+    width: 100%;
+    text-align: left;
+  }
+
+  &__questions-answers {
+    display: flex;
+    gap: 1rem;
+    font-size: 1.3rem;
+
+    span {
+      font-weight: 600;
+    }
+  }
+}
+</style>

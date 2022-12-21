@@ -7,11 +7,12 @@
     "grades": {
       "summary": "First Class Honours",
       "grades": [
-        { "grade": "89%", "subject": "1st Year" },
-        { "grade": "85%", "subject": "2nd Year" },
-        { "grade": "78%", "subject": "3rd Year" }
+        { "grade": "89%", "subject": "First year" },
+        { "grade": "85%", "subject": "Second year" },
+        { "grade": "78%", "subject": "Third year" }
       ]
-    }
+    },
+    "icon": "fa-solid fa-graduation-cap"
   },
   {
     "level": "GCE Advanced Level",
@@ -25,7 +26,8 @@
         { "grade": "A*", "subject": "Maths" },
         { "grade": "A*", "subject": "Physics" }
       ]
-    }
+    },
+    "icon": "fa-solid fa-school"
   },
   {
     "level": "GCE Advanced Subsidiary Level",
@@ -40,7 +42,8 @@
         { "grade": "A", "subject": "Physics" },
         { "grade": "B", "subject": "Economics" }
       ]
-    }
+    },
+    "icon": "fa-solid fa-school"
   },
   {
     "level": "GCSE",
@@ -61,6 +64,7 @@
         { "grade": "A", "subject": "German" },
         { "grade": "A", "subject": "Geography" }
       ]
-    }
+    },
+    "icon": "fa-solid fa-school"
   }
 ]

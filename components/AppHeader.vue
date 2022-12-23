@@ -116,7 +116,7 @@ header {
   }
 
   &__dropdown {
-    transition: transform 0.5s ease-in-out;
+    transition: transform 0.25s ease-in;
     position: absolute;
     z-index: -1;
     width: 100%;
@@ -142,6 +142,7 @@ header {
 
   &.open {
     .menu__dropdown {
+      transition: transform 0.5s ease-in-out;
       transform: translateY(100%);
     }
 

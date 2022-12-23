@@ -1,5 +1,5 @@
 <template>
-  <section id="online" class="white">
+  <section>
     <div class="row section-intro">
       <div class="col-twelve">
         <h5>Online</h5>

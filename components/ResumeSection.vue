@@ -1,5 +1,5 @@
 <template>
-  <section id="resume" class="light-grey">
+  <section>
     <div class="row section-intro">
       <div class="col-twelve">
         <h5>Résumé</h5>

@@ -1,5 +1,5 @@
 <template>
-  <section id="intro">
+  <section>
     <div class="intro-overlay"></div>
     <div class="intro-content">
       <div class="row">

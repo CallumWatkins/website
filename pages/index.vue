@@ -1,15 +1,15 @@
 <template>
-  <HeroSection />
-  <AboutSection />
-  <ResumeSection />
-  <OnlineSection />
-  <ContactSection />
+  <IntroSection id="intro" />
+  <AboutSection id="about" class="white" />
+  <ResumeSection id="resume" class="light-grey" />
+  <OnlineSection id="online" class="white" />
+  <ContactSection id="contact" class="dark-grey" />
 </template>
 
 <script setup lang="ts">
 useHead({
   title: "Callum Watkins"
-})
+});
 </script>
 
 <style lang="scss">

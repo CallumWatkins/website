@@ -12,7 +12,16 @@
         { "grade": "78%", "subject": "Third year" }
       ]
     },
-    "icon": "fa-solid fa-graduation-cap"
+    "icon": "fa-solid fa-graduation-cap",
+    "badges": [
+      "C++",
+      "Java",
+      "Scala",
+      "JavaScript",
+      "PHP",
+      "SQL",
+      "Docker"
+    ]
   },
   {
     "level": "GCE Advanced Level",
@@ -27,7 +36,13 @@
         { "grade": "A*", "subject": "Physics" }
       ]
     },
-    "icon": "fa-solid fa-school"
+    "icon": "fa-solid fa-school",
+    "badges": [
+      "C#",
+      "WPF",
+      "PHP",
+      "SQL"
+    ]
   },
   {
     "level": "GCE Advanced Subsidiary Level",
@@ -43,7 +58,10 @@
         { "grade": "B", "subject": "Economics" }
       ]
     },
-    "icon": "fa-solid fa-school"
+    "icon": "fa-solid fa-school",
+    "badges": [
+      "Java"
+    ]
   },
   {
     "level": "GCSE",
@@ -65,6 +83,12 @@
         { "grade": "A", "subject": "Geography" }
       ]
     },
-    "icon": "fa-solid fa-school"
+    "icon": "fa-solid fa-school",
+    "badges": [
+      "Python",
+      "PHP",
+      "HTML",
+      "CSS"
+    ]
   }
 ]

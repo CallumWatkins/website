@@ -3,13 +3,29 @@
     "role": "Software Developer & Accounting Clerk",
     "period": "July 2018 - Present",
     "company": "Accountancy Corporation in London",
-    "description": "Working at this organisation has awarded me valuable experience in the use of computer systems in the industry. I have had the opportunity to develop software to optimise workflows including ingesting and parsing bank statements, managing sensitive customer information, and updating critical internal databases with the most up-to-date knowledge."
+    "description": "Working at this organisation has awarded me valuable experience in the use of computer systems in the industry. I have had the opportunity to develop software to optimise workflows including ingesting and parsing bank statements, managing sensitive customer information, and updating critical internal databases with the most up-to-date knowledge.",
+    "badges": [
+      "Rust",
+      "Vue.js",
+      "Excel",
+      "Netlify"
+    ]
   },
   {
     "role": "Software Developer",
     "period": "September 2014 - June 2017",
     "company": "ACW Technologies",
-    "description": "Overseeing all main operations along with the organisation and development of all software, websites and infrastructure."
+    "description": "Overseeing all main operations along with the organisation and development of all software, websites and infrastructure.",
+    "badges": [
+      "C#",
+      ".NET",
+      "WPF",
+      "Git",
+      "PHP",
+      "Jekyll",
+      "SQL",
+      "Cloudflare"
+    ]
   },
   {
     "role": "Clerical Assistant",

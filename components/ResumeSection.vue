@@ -31,6 +31,9 @@
                 </template>
               </div>
               <p v-if="e.description" v-for="d in e.description.split('\n')">{{ d }}</p>
+              <div class="badges" v-if="e.badges">
+                <div v-for="b in e.badges">{{ b }}</div>
+              </div>
             </div>
           </div>
         </div>
@@ -54,6 +57,9 @@
             <div class="timeline-content">
               <h4>{{ w.company }}</h4>
               <p v-for="d in w.description.split('\n')">{{ d }}</p>
+              <div class="badges" v-if="w.badges">
+                <div v-for="b in w.badges">{{ b }}</div>
+              </div>
             </div>
           </div>
         </div>
@@ -67,14 +73,30 @@ import education from "@/content/education.json";
 import work from "@/content/work.json";
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
+.badges {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 3rem;
+
+  & > *
+  {
+    font-family: "poppins-semibold", sans-serif;
+    font-size: 0.8em;
+    padding-inline: 1rem;
+    border-radius: 3px;
+    border: 1px solid var(--accent-secondary);
+  }
+}
+
 .education {
   &__grades {
     display: grid;
     grid-template-columns: auto 1fr;
     grid-auto-flow: row;
     column-gap: 0.5em;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
     line-height: 2.5rem;
   }
 }

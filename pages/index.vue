@@ -4,9 +4,18 @@
   <ResumeSection id="resume" class="light-grey" />
   <OnlineSection id="online" class="white" />
   <ContactSection id="contact" class="dark-grey" />
+  <AppHeader :nav-items="navItems" active-nav-item-id="intro" />
 </template>
 
 <script setup lang="ts">
+const navItems = ref([
+  { id: "intro", text: "Home" },
+  { id: "about", text: "About" },
+  { id: "resume", text: "Résumé" },
+  { id: "online", text: "Online" },
+  { id: "contact", text: "Contact" },
+]);
+
 useHead({
   title: "Callum Watkins"
 });

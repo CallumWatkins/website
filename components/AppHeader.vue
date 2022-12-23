@@ -7,7 +7,7 @@
             <li
               v-for="navItem in navItems" :key="navItem.id"
               :class="{ current: activeNavItemId === navItem.id }">
-              <NuxtLink :href="`#${navItem.id}`">{{ navItem.text }}</NuxtLink>
+              <NuxtLink :href="`#${navItem.id}`" @click="navOpen = false">{{ navItem.text }}</NuxtLink>
             </li>
           </ul>
         </nav>

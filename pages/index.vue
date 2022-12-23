@@ -1,10 +1,10 @@
 <template>
-  <IntroSection id="intro" />
-  <AboutSection id="about" class="white" />
-  <ResumeSection id="resume" class="light-grey" />
-  <OnlineSection id="online" class="white" />
-  <ContactSection id="contact" class="dark-grey" />
-  <AppHeader :nav-items="navItems" active-nav-item-id="intro" />
+  <AppHeader :nav-items="navItems" :active-nav-item-id="currentScrolledSectionId" />
+  <IntroSection id="intro" :ref="setSectionRef" />
+  <AboutSection id="about" class="white" :ref="setSectionRef" />
+  <ResumeSection id="resume" class="light-grey" :ref="setSectionRef" />
+  <OnlineSection id="online" class="white" :ref="setSectionRef" />
+  <ContactSection id="contact" class="dark-grey" :ref="setSectionRef" />
 </template>
 
 <script setup lang="ts">
@@ -19,6 +19,8 @@ const navItems = ref([
 useHead({
   title: "Callum Watkins"
 });
+
+const { setSectionRef, currentScrolledSectionId } = useScrollingSectionDetection('intro');
 </script>
 
 <style lang="scss">

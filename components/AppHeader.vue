@@ -41,6 +41,7 @@ interface NavItem {
 <style lang="scss" scoped>
 .row {
   position: relative;
+  z-index: 1;
 }
 
 header {

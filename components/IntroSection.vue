@@ -10,7 +10,6 @@
             <span>Software Developer</span>
             <span>BSc Computer Science</span>
           </p>
-          <a class="button stroke smoothscroll" href="#about">More About Me</a>
         </div>
       </div>
     </div>

@@ -12,7 +12,7 @@
           </ul>
         </nav>
         <div class="menu__header">
-          <a class="menu__toggle" href="#" @click="navOpen = !navOpen">
+          <a class="menu__toggle" href="#" @click.prevent="navOpen = !navOpen">
             <span>Menu</span>
           </a>
           <div class="menu__logo">

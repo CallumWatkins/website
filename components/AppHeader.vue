@@ -5,7 +5,7 @@
         <nav class="menu__dropdown">
           <ul>
             <li
-              v-for="navItem in navItems"
+              v-for="navItem in navItems" :key="navItem.id"
               :class="{ current: activeNavItemId === navItem.id }">
               <NuxtLink :href="`#${navItem.id}`">{{ navItem.text }}</NuxtLink>
             </li>

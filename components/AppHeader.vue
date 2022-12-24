@@ -42,8 +42,8 @@ interface NavItem {
 header {
   position: fixed;
   pointer-events: none;
-  z-index: 1;
   width: 100%;
+  z-index: 999;
 
   .row {
     position: relative;
@@ -61,6 +61,7 @@ header {
 
   &__header {
     background: black;
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -118,7 +119,6 @@ header {
   &__dropdown {
     transition: transform 0.25s ease-in;
     position: absolute;
-    z-index: -1;
     width: 100%;
     bottom: 0;
     background: black;

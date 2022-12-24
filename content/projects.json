@@ -1,0 +1,16 @@
+[
+  {
+    "title": "Title",
+    "description": "Dolore dolore laborum commodo ut velit duis pariatur qui. Irure aliqua dolor veniam aliqua magna occaecat sint tempor nulla ad sit elit.",
+    "image": "intro-bg-1080.jpg",
+    "badges": [
+      "JavaScript",
+      "SCSS",
+      "Vue"
+    ],
+    "link": {
+      "site": "GitHub",
+      "url": "https://github.com/CallumWatkins/project"
+    }
+  }
+]

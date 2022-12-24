@@ -4,6 +4,7 @@
   <AboutSection id="about" class="white" :ref="setSectionRef" />
   <ResumeSection id="resume" class="light-grey" :ref="setSectionRef" />
   <OnlineSection id="online" class="white" :ref="setSectionRef" />
+  <ProjectsSection id="projects" class="light-grey" :ref="setSectionRef" />
   <ContactSection id="contact" class="dark-grey" :ref="setSectionRef" />
 </template>
 
@@ -13,6 +14,7 @@ const navItems = ref([
   { id: "about", text: "About" },
   { id: "resume", text: "Résumé" },
   { id: "online", text: "Online" },
+  { id: "projects", text: "Projects" },
   { id: "contact", text: "Contact" },
 ]);
 

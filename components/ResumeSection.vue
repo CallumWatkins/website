@@ -13,7 +13,7 @@
       </div>
       <div class="col-twelve">
         <div class="timeline-wrap">
-          <div v-for="e in education" class="timeline-block">
+          <div v-for="e in Education" class="timeline-block">
             <div class="timeline-ico">
               <FontAwesomeIcon :icon="e.icon" />
             </div>
@@ -31,9 +31,7 @@
                 </template>
               </div>
               <p v-if="e.description" v-for="d in e.description.split('\n')">{{ d }}</p>
-              <div class="badges" v-if="e.badges">
-                <div v-for="b in e.badges">{{ b }}</div>
-              </div>
+              <BadgeCollection v-if="e.badges" :badges="e.badges" />
             </div>
           </div>
         </div>
@@ -46,7 +44,7 @@
       </div>
       <div class="col-twelve">
         <div class="timeline-wrap">
-          <div v-for="w in work" class="timeline-block">
+          <div v-for="w in Work" class="timeline-block">
             <div class="timeline-ico">
               <FontAwesomeIcon icon="fa-solid fa-briefcase" />
             </div>
@@ -57,9 +55,7 @@
             <div class="timeline-content">
               <h4>{{ w.company }}</h4>
               <p v-for="d in w.description.split('\n')">{{ d }}</p>
-              <div class="badges" v-if="w.badges">
-                <div v-for="b in w.badges">{{ b }}</div>
-              </div>
+              <BadgeCollection v-if="w.badges" :badges="w.badges" />
             </div>
           </div>
         </div>
@@ -69,25 +65,13 @@
 </template>
 
 <script setup lang="ts">
-import education from "@/content/education.json";
-import work from "@/content/work.json";
+import Education from "@/content/education.json";
+import Work from "@/content/work.json";
 </script>
 
 <style lang="scss" scoped>
-.badges {
-  display: flex;
-  gap: 1rem;
-  flex-wrap: wrap;
+.badge-collection {
   margin-bottom: 3rem;
-
-  & > *
-  {
-    font-family: "poppins-semibold", sans-serif;
-    font-size: 0.8em;
-    padding-inline: 1rem;
-    border-radius: 3px;
-    border: 1px solid var(--accent-secondary);
-  }
 }
 
 .education {

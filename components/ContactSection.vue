@@ -4,7 +4,7 @@
       <div class="col-twelve">
         <h5>Contact</h5>
         <h1>I'd Love To Hear From You.</h1>
-        <p class="lead">You can get in touch by emailing me directly or using the form below.<br>To encrypt your message first, use <a href="https://keybase.io/encrypt#callumwatkins" target="_blank" rel="noopener me">Keybase</a>.</p>
+        <p class="lead">You can get in touch by emailing me directly.<br>To encrypt your message first, use <NuxtLink href="https://keybase.io/encrypt#callumwatkins" target="_blank" rel="noopener noreferrer me">Keybase</NuxtLink> or <NuxtLink href="https://keybase.io/callumwatkins/pgp_keys.asc" target="_blank">PGP</NuxtLink>.</p>
       </div>
     </div>
     <div class="row contact-info">

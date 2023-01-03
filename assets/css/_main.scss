@@ -1346,10 +1346,6 @@ section {
   padding-bottom: 12rem;
 }
 
-section:last-of-type {
-  padding-bottom: 4rem;
-}
-
 @media only screen and (max-width: 768px) {
   section {
     padding-top: 10rem;
@@ -2882,104 +2878,6 @@ section.dark-grey .contact-info a:active {
     -webkit-transform: scale(1);
     -ms-transform: scale(1);
     transform: scale(1);
-  }
-}
-
-/** 
- * ===================================================================
- * 18. footer - (_layout.scss)
- *
- * ------------------------------------------------------------------- 
- */
-footer {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-  font-size: 1.4rem;
-  font-family: "poppins-regular", sans-serif;
-  color: var(--grey-57);
-  background: var(--grey-92);
-}
-
-footer a,
-footer a:visited {
-  color: white;
-}
-
-footer a:hover,
-footer a:focus,
-footer a:active {
-  color: var(--accent-primary);
-}
-
-footer .row {
-  max-width: 900px;
-}
-
-footer .social {
-  display: flex;
-  justify-content: space-between;
-  text-align: right;
-  position: relative;
-  font-size: 2.1rem;
-  margin: 0;
-  padding: 0;
-}
-
-footer .social div {
-  display: inline-block;
-  margin: 0;
-}
-
-footer .copyright a,
-footer .copyright a:visited {
-  color: inherit;
-}
-
-footer .copyright a:hover,
-footer .copyright a:focus,
-footer .copyright a:active {
-  color: var(--grey-37);
-}
-
-footer .copyright span {
-  display: inline-block;
-}
-
-footer .copyright span:not(:last-child)::after {
-  content: "|";
-  display: inline-block;
-  padding: 0 1rem 0 1.2rem;
-  color: rgba(255, 255, 255, 0.1);
-}
-
-/**
- * responsive:
- * footer
- * -------------------------------------------------------------------
- */
-@media only screen and (min-width: 769px) and (max-width: 1024px) {
-  footer .social {
-    /* Prevent scroll-to-top button overlapping social on the RHS. */
-    padding-right: 40px;
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  footer {
-    text-align: center;
-  }
-  footer .social {
-    float: none;
-    width: 100%;
-    max-width: 400px;
-    text-align: center;
-    margin: 0 auto 1.5rem auto;
-  }
-  footer .copyright span {
-    display: block;
-  }
-  footer .copyright span:not(:last-child)::after {
-    display: none;
   }
 }
 

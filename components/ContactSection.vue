@@ -11,8 +11,8 @@
       <div class="col-twelve">
         <h5>Email Me</h5>
         <p>
-          <a href="mailto:contact@callumwatkins.com">contact@callumwatkins.com</a><br>
-          <a href="mailto:callumwatkins@protonmail.com">callumwatkins@protonmail.com</a>
+          <NuxtLink href="mailto:contact@callumwatkins.com">contact@callumwatkins.com</NuxtLink><br>
+          <NuxtLink href="mailto:callumwatkins@protonmail.com">callumwatkins@protonmail.com</NuxtLink>
         </p>
       </div>
     </div>

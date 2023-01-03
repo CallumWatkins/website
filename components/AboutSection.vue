@@ -12,7 +12,7 @@
     </div>
     <div class="row button-section">
       <div class="col-twelve">
-        <a href="#contact" title="Contact Me" class="button stroke smoothscroll">Contact Me</a>
+        <NuxtLink href="#contact" title="Contact Me" class="button stroke smoothscroll">Contact Me</NuxtLink>
         <!--<a href="#" title="Download CV" class="button button-primary">Download CV</a>-->
       </div>
     </div>

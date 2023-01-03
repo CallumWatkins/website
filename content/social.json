@@ -1,0 +1,42 @@
+[
+  {
+    "url": "mailto:contact@callumwatkins.com",
+    "title": "Email me",
+    "icon": "fa-regular fa-envelope"
+  },
+  {
+    "url": "https://t.me/CallumWatkins",
+    "title": "Message me on Telegram",
+    "icon": "fa-brands fa-telegram"
+  },
+  {
+    "url": "https://keybase.io/CallumWatkins",
+    "title": "Find me on Keybase",
+    "icon": "fa-brands fa-keybase"
+  },
+  {
+    "url": "https://twitter.com/_CallumWatkins",
+    "title": "Find me on Twitter",
+    "icon": "fa-brands fa-twitter"
+  },
+  {
+    "url": "https://github.com/CallumWatkins",
+    "title": "Find me on GitHub",
+    "icon": "fa-brands fa-github"
+  },
+  {
+    "url": "https://stackoverflow.com/users/4415734/callum-watkins",
+    "title": "Find me on Stack Overflow",
+    "icon": "fa-brands fa-stack-overflow"
+  },
+  {
+    "url": "https://www.linkedin.com/in/CallumWatkins",
+    "title": "Find me on LinkedIn",
+    "icon": "fa-brands fa-linkedin-in"
+  },
+  {
+    "url": "https://www.paypal.me/CallumWatkins",
+    "title": "Send money with PayPal",
+    "icon": "fa-brands fa-paypal"
+  }
+]

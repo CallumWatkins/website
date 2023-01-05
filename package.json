@@ -8,7 +8,16 @@
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
+    "@cloudflare/workers-types": "^4.20221111.1",
     "nuxt": "3.0.0",
-    "sass": "^1.57.0"
+    "sass": "^1.57.0",
+    "schema-dts": "^1.1.0",
+    "typescript": "^4.9.4"
+  },
+  "dependencies": {
+    "@fortawesome/free-brands-svg-icons": "^6.2.1",
+    "@fortawesome/free-regular-svg-icons": "^6.2.1",
+    "@fortawesome/free-solid-svg-icons": "^6.2.1",
+    "@fortawesome/vue-fontawesome": "^3.0.2"
   }
 }

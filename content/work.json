@@ -1,0 +1,36 @@
+[
+  {
+    "role": "Software Developer & Accounting Clerk",
+    "period": "July 2018 – Present",
+    "company": "Accountancy Corporation in London",
+    "description": "Working at this organisation has awarded me valuable experience in the use of computer systems in the industry. I have had the opportunity to develop software to optimise workflows, including ingesting and parsing bank statements, managing sensitive customer information, and updating critical internal databases with the most up-to-date knowledge.",
+    "badges": [
+      "Rust",
+      "Vue.js",
+      "Excel",
+      "Netlify"
+    ]
+  },
+  {
+    "role": "Software Developer",
+    "period": "September 2014 – June 2017",
+    "company": "ACW Technologies",
+    "description": "As co-founder of this non-profit software organisation, I managed all main operations including the design and development of all software, websites, and infrastructure.",
+    "badges": [
+      "C#",
+      ".NET",
+      "WPF",
+      "Git",
+      "PHP",
+      "Jekyll",
+      "SQL",
+      "Cloudflare"
+    ]
+  },
+  {
+    "role": "Clerical Assistant",
+    "period": "July 2015 – August 2015",
+    "company": "H H Burke & Co",
+    "description": "School work experience in an accountancy office during which I improved my communication, organisation, and time management skills."
+  }
+]

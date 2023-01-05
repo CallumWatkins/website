@@ -1,0 +1,94 @@
+[
+  {
+    "level": "BSc Computer Science",
+    "period": "September 2018 – July 2022",
+    "institution": "King's College London",
+    "description": "Here I gained an in-depth understanding of the field of computer-based information systems.\nModules include: Software Engineering, Programming, Discrete Mathematics, Machine Architecture, Logic, Databases, Data Structures, Computational Mathematics, Internet Systems, Artificial Intelligence, Operating Systems, Language Paradigms, Compilers, Cryptography, Formal Verification, Computational Models, Network Security, Optimization Methods.",
+    "grades": {
+      "summary": "First Class Honours",
+      "grades": [
+        { "grade": "89%", "subject": "First year" },
+        { "grade": "85%", "subject": "Second year" },
+        { "grade": "78%", "subject": "Third year" }
+      ]
+    },
+    "icon": "fa-solid fa-graduation-cap",
+    "badges": [
+      "C++",
+      "Java",
+      "Scala",
+      "JavaScript",
+      "PHP",
+      "SQL",
+      "Docker"
+    ]
+  },
+  {
+    "level": "GCE Advanced Level",
+    "period": "June 2016 – June 2018",
+    "institution": "East Barnet School",
+    "description": null,
+    "grades": {
+      "summary": "A*A*A*",
+      "grades": [
+        { "grade": "A*", "subject": "Computer Science" },
+        { "grade": "A*", "subject": "Maths" },
+        { "grade": "A*", "subject": "Physics" }
+      ]
+    },
+    "icon": "fa-solid fa-school",
+    "badges": [
+      "C#",
+      "WPF",
+      "PHP",
+      "SQL"
+    ]
+  },
+  {
+    "level": "GCE Advanced Subsidiary Level",
+    "period": "June 2016 – June 2017",
+    "institution": "East Barnet School",
+    "description": null,
+    "grades": {
+      "summary": "AAAB",
+      "grades": [
+        { "grade": "A", "subject": "Computer Science" },
+        { "grade": "A", "subject": "Maths" },
+        { "grade": "A", "subject": "Physics" },
+        { "grade": "B", "subject": "Economics" }
+      ]
+    },
+    "icon": "fa-solid fa-school",
+    "badges": [
+      "Java"
+    ]
+  },
+  {
+    "level": "GCSE",
+    "period": "June 2014 – June 2016",
+    "institution": "East Barnet School",
+    "description": null,
+    "grades": {
+      "summary": "3A* & 7A",
+      "grades": [
+        { "grade": "A*", "subject": "Computer Science" },
+        { "grade": "A*", "subject": "Maths" },
+        { "grade": "A*", "subject": "Additional Science" },
+        { "grade": "A", "subject": "Core Science" },
+        { "grade": "A", "subject": "English Language" },
+        { "grade": "A", "subject": "English Literature" },
+        { "grade": "A", "subject": "Digital Applications L2" },
+        { "grade": "A", "subject": "D&T: Graphic Products" },
+        { "grade": "A", "subject": "German" },
+        { "grade": "A", "subject": "Geography" }
+      ]
+    },
+    "icon": "fa-solid fa-school",
+    "badges": [
+      "Python",
+      "PHP",
+      "HTML",
+      "CSS"
+    ]
+  }
+]

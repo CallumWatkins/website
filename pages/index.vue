@@ -111,5 +111,4 @@ const { setSectionRef, currentScrolledSectionId } = useScrollingSectionDetection
 <style lang="scss">
 @use '@/assets/css/base';
 @use '@/assets/css/main';
-@use '@/assets/css/vendor';
 </style>

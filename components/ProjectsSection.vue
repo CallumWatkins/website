@@ -15,7 +15,9 @@
         >
         <swiper-slide v-for="p in Projects">
           <div class="project-card">
-            <div class="project-card__image"><img :src="getImageSrc(p.image)" alt=""></div>
+            <div class="project-card__image">
+              <ImageSources :sources="p.images.map(getImageSrc)" alt="" />
+            </div>
             <div class="project-card__title">{{ p.title }}</div>
             <div class="project-card__description">{{ p.description }}</div>
             <div class="project-card__badges">
@@ -78,7 +80,7 @@ const { getImageSrc } = useImages();
   &__image {
     height: 200px;
 
-    img {
+    ::v-deep(img) {
       height: 100%;
       width: 100%;
       object-fit: cover;

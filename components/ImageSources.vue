@@ -17,6 +17,8 @@ function getType(srcset: string) {
   if (srcset.endsWith(".png")) return "image/png";
   if (srcset.endsWith(".jpg")) return "image/jpeg";
   if (srcset.endsWith(".jpeg")) return "image/jpeg";
+  if (srcset.endsWith(".avif")) return "image/avif";
+  if (srcset.endsWith(".webp")) return "image/webp";
   throw new Error(`Unhandled image source type: ${srcset}`);
 }
 </script>

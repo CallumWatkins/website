@@ -1,18 +1,47 @@
 [
   {
-    "title": "Title",
-    "description": "Dolore dolore laborum commodo ut velit duis pariatur qui. Irure aliqua dolor veniam aliqua magna occaecat sint tempor nulla ad sit elit.",
+    "title": "MO Books",
+    "description": "A simple and intuitive modern application for writing and publishing an online book by interfacing with existing media and web technologies, such as the Markdown language.",
+    "images": [
+      "mo-books-dashboard.png"
+    ],
     "badges": [
+      "Vue",
       "JavaScript",
       "SCSS",
-      "Vue"
+      "Markdown"
     ],
     "link": {
       "site": "GitHub",
-      "url": "https://github.com/CallumWatkins/project"
+      "url": "https://github.com/CallumWatkins/mo-books"
     }
+  },
+  {
+    "title": "Personal Website",
+    "description": "Built using Nuxt (a JavaScript framework and ecosystem based on Vue), statically generated, and hosted on Cloudflare Pages.",
+    "images": [
+      "personal-website.avif",
+      "personal-website.png"
+    ],
+    "badges": [
+      "Nuxt",
+      "TypeScript",
+      "SCSS",
+      "Cloudflare"
+    ],
+    "link": {
+      "site": "GitHub",
+      "url": "https://github.com/CallumWatkins/website"
+    }
+  },
+  {
+    "title": "Sudoku Solver",
+    "description": "An exercise in data structures (circular buffer, stack, linked list, AVL binary search tree), algorithms (searching, sorting, and solving), and string manipulation.",
     "images": [
       "intro-bg-1080.jpg"
     ],
+    "badges": [
+      "C++"
+    ]
   }
 ]

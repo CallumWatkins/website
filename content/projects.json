@@ -38,7 +38,8 @@
     "title": "Sudoku Solver",
     "description": "An exercise in data structures (circular buffer, stack, linked list, AVL binary search tree), algorithms (searching, sorting, and solving), and string manipulation.",
     "images": [
-      "intro-bg-1080.jpg"
+      "sudoku-solver.avif",
+      "sudoku-solver.png"
     ],
     "badges": [
       "C++"

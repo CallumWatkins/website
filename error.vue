@@ -67,14 +67,14 @@ console.log(props.error);
       background-size: 200% 100%;
       background-position: left bottom;
       transition: background-position 0.5s ease;
-    }
 
-    a:visited {
-      color: #fff;
-    }
+      &:visited {
+        color: #fff;
+      }
 
-    a:hover {
-      background-position: right bottom;
+      &:hover {
+        background-position: right bottom;
+      }
     }
 
     @media only screen and (max-width: 480px) {

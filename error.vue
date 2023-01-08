@@ -17,15 +17,16 @@
 
 <script setup lang="ts">
 const props = defineProps<{
-  error: any
+  error: any,
 }>();
 
 useHead({
+  titleTemplate: "%s | Callum Watkins",
   title: computed(() => {
-    if (props.error.statusCode === "404") return `Page Not Found | Callum Watkins`;
-    else if (props.error.statusCode) return `Error ${props.error.statusCode} | Callum Watkins`;
-    else return "Error | Callum Watkins";
-  })
+    if (props.error.statusCode === "404") return `Page Not Found`;
+    else if (props.error.statusCode) return `Error ${props.error.statusCode}`;
+    else return "Error";
+  }),
 });
 </script>
 

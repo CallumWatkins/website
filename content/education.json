@@ -1,7 +1,7 @@
 [
   {
     "level": "BSc Computer Science",
-    "period": "September 2018 - July 2022",
+    "period": "September 2018 – July 2022",
     "institution": "King's College London",
     "description": "Here I gained an in-depth understanding of the field of computer-based information systems.\nModules include: Software Engineering, Programming, Discrete Mathematics, Machine Architecture, Logic, Databases, Data Structures, Computational Mathematics, Internet Systems, Artificial Intelligence, Operating Systems, Language Paradigms, Compilers, Cryptography, Formal Verification, Computational Models, Network Security, Optimization Methods.",
     "grades": {
@@ -25,7 +25,7 @@
   },
   {
     "level": "GCE Advanced Level",
-    "period": "June 2016 - June 2018",
+    "period": "June 2016 – June 2018",
     "institution": "East Barnet School",
     "description": null,
     "grades": {
@@ -46,7 +46,7 @@
   },
   {
     "level": "GCE Advanced Subsidiary Level",
-    "period": "June 2016 - June 2017",
+    "period": "June 2016 – June 2017",
     "institution": "East Barnet School",
     "description": null,
     "grades": {
@@ -65,7 +65,7 @@
   },
   {
     "level": "GCSE",
-    "period": "June 2014 - June 2016",
+    "period": "June 2014 – June 2016",
     "institution": "East Barnet School",
     "description": null,
     "grades": {

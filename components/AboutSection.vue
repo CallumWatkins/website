@@ -5,7 +5,7 @@
         <h5>About</h5>
         <h1>Let me introduce myself.</h1>
         <div class="intro-info">
-          <img src="@/assets/images/logos/CW_Logo.svg" alt="Profile Picture">
+          <img src="/logos/CW_Logo.svg" alt="Profile Picture">
           <p class="lead">I am a Computer Science graduate of King's College London, having progressed my skills in a wide range of technologies and programming languages. I have had a passion for developing software since I was 14 years old.</p>
         </div>
       </div>

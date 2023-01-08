@@ -20,6 +20,13 @@ const props = defineProps<{
   error: any
 }>();
 
+useHead({
+  title: computed(() => {
+    if (props.error.statusCode === "404") return `Page Not Found | Callum Watkins`;
+    else if (props.error.statusCode) return `Error ${props.error.statusCode} | Callum Watkins`;
+    else return "Error | Callum Watkins";
+  })
+});
 </script>
 
 <style lang="scss" scoped>

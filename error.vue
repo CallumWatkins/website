@@ -20,7 +20,6 @@ const props = defineProps<{
   error: any
 }>();
 
-console.log(props.error);
 </script>
 
 <style lang="scss" scoped>

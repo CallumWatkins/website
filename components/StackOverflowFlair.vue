@@ -1,7 +1,7 @@
 <template>
   <GenericFlair
     profileName="Callum Watkins"
-    :profilePicture="CW_Logo"
+    profilePicture="/logos/CW_Logo.svg"
     :logo="StackOverflowLogo"
     href="https://stackoverflow.com/users/4415734/callum-watkins">
     <template v-slot:details>
@@ -24,7 +24,6 @@
 </template>
 
 <script setup lang="ts">
-import CW_Logo from '@/assets/images/logos/CW_Logo.svg';
 import StackOverflowLogo from '@/assets/images/stack-overflow.svg';
 
 const userId = '4415734';

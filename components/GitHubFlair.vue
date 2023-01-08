@@ -1,7 +1,7 @@
 <template>
   <GenericFlair
     profileName="Callum Watkins"
-    :profilePicture="CW_Logo"
+    profilePicture="/logos/CW_Logo.svg"
     :logo="GitHubLogo"
     href="https://github.com/CallumWatkins">
     <template v-slot:details>
@@ -23,7 +23,6 @@
 </template>
 
 <script setup lang="ts">
-import CW_Logo from '@/assets/images/logos/CW_Logo.svg';
 import GitHubLogo from '@/assets/images/github-mark-white.svg';
 
 const { data } = useLazyFetch<GHResponse>(

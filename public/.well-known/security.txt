@@ -1,0 +1,4 @@
+Contact: mailto:callumwatkins@protonmail.com
+Encryption: https://keybase.io/callumwatkins/pgp_keys.asc
+Preferred-Languages: en
+Canonical: https://www.callumwatkins.com/.well-known/security.txt

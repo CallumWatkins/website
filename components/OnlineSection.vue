@@ -30,5 +30,10 @@
   display: flex;
   justify-content: center;
   margin-top: 4rem;
+
+  @media screen and (max-width: 768px) {
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+  }
 }
 </style>

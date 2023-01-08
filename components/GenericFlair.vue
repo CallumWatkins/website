@@ -1,5 +1,5 @@
 <template>
-  <a :href="href" target="_blank" rel="noopener me">
+  <NuxtLink :href="href" target="_blank" rel="noopener noreferrer me">
     <div class="flair">
       <div class="flair__grid">
         <div class="flair__profile-picture">
@@ -14,11 +14,11 @@
         </div>
       </div>
     </div>
-  </a>
+  </NuxtLink>
 </template>
 
 <script setup lang="ts">
-const props = defineProps<{
+defineProps<{
   profileName: string,
   profilePicture: string,
   logo: string,

@@ -1076,7 +1076,14 @@ section.dark-grey a:active {
  * ------------------------------------------------------------------- 
  */
 #intro {
-  background: url(/assets/images/intro-bg-1440.jpg) no-repeat center bottom;
+  background-image: url(/assets/images/intro-bg-1440.jpg);
+  background-image: image-set(
+    url(/assets/images/intro-bg-1440.avif) type("image/avif"),
+    url(/assets/images/intro-bg-1440.jpg) type("image/jpeg")
+  );
+  background-position-x: center;
+  background-position-y: bottom;
+  background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
   width: 100%;
@@ -1086,22 +1093,24 @@ section.dark-grey a:active {
   display: table;
   position: relative;
   text-align: center;
-}
 
-@media screen and (max-device-width: 1920px) and (max-device-height: 1080px) {
-  #intro {
+  @media screen and (max-device-width: 1920px) and (max-device-height: 1080px) {
     background-image: url(/assets/images/intro-bg-1080.jpg);
+    background-image: image-set(
+      url(/assets/images/intro-bg-1080.avif) type("image/avif"),
+      url(/assets/images/intro-bg-1080.jpg) type("image/jpeg")
+    );
   }
-}
 
-@media screen and (max-device-width: 1280px) and (max-device-height: 720px) {
-  #intro {
+  @media screen and (max-device-width: 1280px) and (max-device-height: 720px) {
     background-image: url(/assets/images/intro-bg-720.jpg);
+    background-image: image-set(
+      url(/assets/images/intro-bg-720.avif) type("image/avif"),
+      url(/assets/images/intro-bg-720.jpg) type("image/jpeg")
+    );
   }
-}
 
-@media screen and (max-device-width: 1024px) {
-  #intro {
+  @media screen and (max-device-width: 1024px) {
     background-attachment: scroll; /* Fix for mobile devices that don't support fixed */
   }
 }

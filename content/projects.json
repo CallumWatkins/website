@@ -1,5 +1,23 @@
 [
   {
+    "title": "Crust",
+    "description": "A lightweight peer-to-peer chat and screen sharing application made using Tauri, a multi-platform application toolkit.",
+    "images": [
+      "crust.jpg"
+    ],
+    "badges": [
+      "Rust",
+      "Tauri",
+      "Vue",
+      "TypeScript",
+      "SCSS"
+    ],
+    "link": {
+      "site": "GitHub",
+      "url": "https://github.com/CallumWatkins/crust"
+    }
+  },
+  {
     "title": "MO Books",
     "description": "A simple and intuitive modern application for writing and publishing an online book by interfacing with existing media and web technologies, such as the Markdown language.",
     "images": [

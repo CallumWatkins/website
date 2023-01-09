@@ -159,5 +159,21 @@
       "site": "GitHub",
       "url": "https://github.com/CallumWatkins/dynamic-dns-updater"
     }
+  },
+  {
+    "title": "File Date Range Checker",
+    "description": "A command-line tool to check if a directory containing files with named date ranges is missing any dates from a given range.",
+    "images": [
+      "file-date-range-checker.png"
+    ],
+    "badges": [
+      "C#",
+      ".NET",
+      "CLI"
+    ],
+    "link": {
+      "site": "GitHub",
+      "url": "https://github.com/CallumWatkins/file-date-range-checker"
+    }
   }
 ]

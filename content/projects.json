@@ -1,20 +1,20 @@
 [
   {
-    "title": "Crust",
-    "description": "A lightweight peer-to-peer chat and screen sharing application made using Tauri, a multi-platform application toolkit.",
+    "title": "Personal Website",
+    "description": "Built using Nuxt (a JavaScript framework and ecosystem based on Vue), statically generated, and hosted on Cloudflare Pages.",
     "images": [
-      "crust.jpg"
+      "personal-website.avif",
+      "personal-website.png"
     ],
     "badges": [
-      "Rust",
-      "Tauri",
-      "Vue",
+      "Nuxt",
       "TypeScript",
-      "SCSS"
+      "SCSS",
+      "Cloudflare"
     ],
     "link": {
       "site": "GitHub",
-      "url": "https://github.com/CallumWatkins/crust"
+      "url": "https://github.com/CallumWatkins/website"
     }
   },
   {
@@ -35,21 +35,21 @@
     }
   },
   {
-    "title": "Personal Website",
-    "description": "Built using Nuxt (a JavaScript framework and ecosystem based on Vue), statically generated, and hosted on Cloudflare Pages.",
+    "title": "Crust",
+    "description": "A lightweight peer-to-peer chat and screen sharing application made using Tauri, a multi-platform application toolkit.",
     "images": [
-      "personal-website.avif",
-      "personal-website.png"
+      "crust.jpg"
     ],
     "badges": [
-      "Nuxt",
+      "Rust",
+      "Tauri",
+      "Vue",
       "TypeScript",
-      "SCSS",
-      "Cloudflare"
+      "SCSS"
     ],
     "link": {
       "site": "GitHub",
-      "url": "https://github.com/CallumWatkins/website"
+      "url": "https://github.com/CallumWatkins/crust"
     }
   },
   {
@@ -71,17 +71,6 @@
     }
   },
   {
-    "title": "Sudoku Solver",
-    "description": "An exercise in data structures (circular buffer, stack, linked list, AVL binary search tree), algorithms (searching, sorting, and solving), and string manipulation.",
-    "images": [
-      "sudoku-solver.avif",
-      "sudoku-solver.png"
-    ],
-    "badges": [
-      "C++"
-    ]
-  },
-  {
     "title": "Functional Language Compiler",
     "description": "A complete pipeline for lexing, parsing, and compiling a functional language to LLVM IR, with extensive use made of regular expressions, automata, context free grammars, and abstract syntax trees.",
     "images": [
@@ -90,6 +79,17 @@
     ],
     "badges": [
       "Scala"
+    ]
+  },
+  {
+    "title": "Sudoku Solver",
+    "description": "An exercise in data structures (circular buffer, stack, linked list, AVL binary search tree), algorithms (searching, sorting, and solving), and string manipulation.",
+    "images": [
+      "sudoku-solver.avif",
+      "sudoku-solver.png"
+    ],
+    "badges": [
+      "C++"
     ]
   }
 ]

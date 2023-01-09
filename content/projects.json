@@ -21,11 +21,11 @@
     "title": "MO Books",
     "description": "A simple and intuitive modern application for writing and publishing an online book by interfacing with existing media and web technologies, such as the Markdown language.",
     "images": [
-      "mo-books-dashboard.png"
+      "mo-books.avif",
+      "mo-books.png"
     ],
     "badges": [
       "Vue",
-      "JavaScript",
       "SCSS",
       "Markdown"
     ],

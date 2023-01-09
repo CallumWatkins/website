@@ -108,5 +108,22 @@
       "site": "ACW Technologies",
       "url": "https://www.acwtechnologies.co.uk/software/jarvis-lite"
     }
+  },
+  {
+    "title": "MarsNote",
+    "description": "An easy to use, lightweight note-taking application. Featuring rich text formatting of notes and a modern user interface.",
+    "images": [
+      "marsnote.avif",
+      "marsnote.png"
+    ],
+    "badges": [
+      "C#",
+      ".NET",
+      "WPF"
+    ],
+    "link": {
+      "site": "ACW Technologies",
+      "url": "https://www.acwtechnologies.co.uk/software/marsnote"
+    }
   }
 ]

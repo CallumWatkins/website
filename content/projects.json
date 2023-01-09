@@ -91,5 +91,22 @@
     "badges": [
       "C++"
     ]
+  },
+  {
+    "title": "Jarvis Lite",
+    "description": "A popular application for controlling a Windows system using custom voice commands. Inspired by the fictional J.A.R.V.I.S. AI from the Marvel Cinematic Universe.",
+    "images": [
+      "jarvis-lite.avif",
+      "jarvis-lite.png"
+    ],
+    "badges": [
+      "C#",
+      ".NET",
+      "WPF"
+    ],
+    "link": {
+      "site": "ACW Technologies",
+      "url": "https://www.acwtechnologies.co.uk/software/jarvis-lite"
+    }
   }
 ]

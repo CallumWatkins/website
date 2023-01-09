@@ -140,5 +140,24 @@
     "link": {
       "site": "ACW Technologies",
       "url": "https://www.acwtechnologies.co.uk/software/multirun"
+    }
+  },
+  {
+    "title": "Dynamic DNS Updater",
+    "description": "A simple and robust tool for keeping DNS records on both Cloudflare and Namecheap dynamically updated with the host's public IP address.",
+    "images": [
+      "ddns-updater.avif",
+      "ddns-updater.png"
+    ],
+    "badges": [
+      "C#",
+      ".NET",
+      "CLI",
+      "Docker"
+    ],
+    "link": {
+      "site": "GitHub",
+      "url": "https://github.com/CallumWatkins/dynamic-dns-updater"
+    }
   }
 ]

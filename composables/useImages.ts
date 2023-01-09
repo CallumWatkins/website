@@ -10,10 +10,8 @@ export default function(): ImagesComposable {
   const getImageSrc = (fileName: string): string => {
     for (const path in images.value) {
       if (Object.hasOwn(images.value, path)) {
-        const image: unknown = images.value[path];
-        const imagePath = (image as { default: string }).default;
-        if (imagePath.endsWith(fileName)) {
-          return imagePath;
+        if (path.endsWith(fileName)) {
+          return (images.value[path] as unknown as { default: string }).default;
         }
       }
     }

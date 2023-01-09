@@ -10,20 +10,21 @@
     <div class="projects-row">
       <swiper
         :grabCursor="true"
-        :space-between="20"
         :slides-per-view="'auto'"
         >
         <swiper-slide v-for="p in Projects">
-          <div class="project-card">
-            <div class="project-card__image">
-              <ImageSources :sources="p.images.map(getImageSrc)" alt="" />
+          <div class="card-wrapper">
+            <div class="project-card">
+              <div class="project-card__image">
+                <ImageSources :sources="p.images.map(getImageSrc)" alt="" />
+              </div>
+              <div class="project-card__title">{{ p.title }}</div>
+              <div class="project-card__description">{{ p.description }}</div>
+              <div class="project-card__badges">
+                <BadgeCollection v-if="p.badges" :badges="p.badges" />
+              </div>
+              <div class="project-card__link"><NuxtLink v-if="p.link" :href="p.link.url" target="_blank">View on {{ p.link.site }} <FontAwesomeIcon icon="fa-solid fa-arrow-up-right-from-square" size="xs" /></NuxtLink></div>
             </div>
-            <div class="project-card__title">{{ p.title }}</div>
-            <div class="project-card__description">{{ p.description }}</div>
-            <div class="project-card__badges">
-              <BadgeCollection v-if="p.badges" :badges="p.badges" />
-            </div>
-            <div class="project-card__link"><NuxtLink v-if="p.link" :href="p.link.url" target="_blank">View on {{ p.link.site }} <FontAwesomeIcon icon="fa-solid fa-arrow-up-right-from-square" size="xs" /></NuxtLink></div>
           </div>
         </swiper-slide>
       </swiper>
@@ -52,15 +53,12 @@ const { getImageSrc } = useImages();
 .swiper-slide {
   width: auto;
   height: auto;
-  margin-block: 20px;
+}
 
-  &:first-child {
-    margin-left: 20px;
-  }
-
-  &:last-child {
-    margin-right: 20px;
-  }
+.card-wrapper {
+  height: 100%;
+  box-sizing: border-box;
+  padding: 20px 15px;
 }
 
 .project-card {

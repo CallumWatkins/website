@@ -53,6 +53,24 @@
     }
   },
   {
+    "title": "King's College Hospital Paediatric Liver Service Website",
+    "description": "Coordinated with nurses at KCH to design and develop a web application to educate parents about liver conditions affecting their children.",
+    "images": [
+      "kch-pls.avif",
+      "kch-pls.png"
+    ],
+    "badges": [
+      "Vue",
+      "Java",
+      "SQL",
+      "Netlify"
+    ],
+    "link": {
+      "site": "GitHub",
+      "url": "https://github.com/CallumWatkins/kch-pls-website"
+    }
+  },
+  {
     "title": "Sudoku Solver",
     "description": "An exercise in data structures (circular buffer, stack, linked list, AVL binary search tree), algorithms (searching, sorting, and solving), and string manipulation.",
     "images": [

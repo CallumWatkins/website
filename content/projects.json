@@ -125,5 +125,20 @@
       "site": "ACW Technologies",
       "url": "https://www.acwtechnologies.co.uk/software/marsnote"
     }
+  },
+  {
+    "title": "MultiRun",
+    "description": "A quick and efficient tool for launching multiple applications on a Windows system with one click, including support for custom arguments, verbs, and delays.",
+    "images": [
+      "multirun.png"
+    ],
+    "badges": [
+      "C#",
+      ".NET",
+      "WPF"
+    ],
+    "link": {
+      "site": "ACW Technologies",
+      "url": "https://www.acwtechnologies.co.uk/software/multirun"
   }
 ]

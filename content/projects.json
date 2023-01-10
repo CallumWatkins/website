@@ -194,6 +194,21 @@
     }
   },
   {
+    "title": "Bank Statement Parser",
+    "description": "An efficient command-line tool for converting raw text from bank statements to CSV format using a regular expression.",
+    "images": [
+      "bank-statement-parser.avif",
+      "bank-statement-parser.png"
+    ],
+    "badges": [
+      "Rust"
+    ],
+    "link": {
+      "site": "GitHub",
+      "url": "https://github.com/CallumWatkins/bank-statement-parser"
+    }
+  },
+  {
     "title": "Companies House Company List Updater",
     "description": "A web application that enables the mass retrieval of public company data through the Companies House API.",
     "images": [

@@ -105,8 +105,8 @@
     "title": "Functional Language Compiler",
     "description": "A complete pipeline for lexing, parsing, and compiling a functional language to LLVM IR, with extensive use made of regular expressions, automata, context free grammars, and abstract syntax trees.",
     "images": [
-      "compiler.avif",
-      "compiler.png"
+      "functional-compiler.avif",
+      "functional-compiler.png"
     ],
     "badges": [
       "Scala"

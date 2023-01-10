@@ -16,7 +16,7 @@
           <div class="card-wrapper">
             <div class="project-card">
               <div class="project-card__image">
-                <ImageSources :sources="p.images.map(getImageSrc)" alt="" />
+                <ImageSources :sources="p.images.map(img => getImageSrc(`projects/${img}`))" alt="" />
               </div>
               <div class="project-card__title">{{ p.title }}</div>
               <div class="project-card__description">{{ p.description }}</div>

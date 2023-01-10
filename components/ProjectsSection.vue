@@ -90,7 +90,7 @@ const { getImageSrc } = useImages();
   overflow: clip;
 
   &__image {
-    height: 200px;
+    aspect-ratio: 1.75 / 1;
 
     ::v-deep(img) {
       height: 100%;

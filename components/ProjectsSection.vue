@@ -23,7 +23,14 @@
               <div class="project-card__badges">
                 <BadgeCollection v-if="p.badges" :badges="p.badges" />
               </div>
-              <div class="project-card__link"><NuxtLink v-if="p.link" :href="p.link.url" target="_blank">View on {{ p.link.site }} <FontAwesomeIcon icon="fa-solid fa-arrow-up-right-from-square" size="xs" /></NuxtLink></div>
+              <div class="project-card__link">
+                <NuxtLink
+                  v-if="p.link"
+                  :href="p.link.url"
+                  target="_blank"
+                  >View <span v-if="p.link.site">on {{ p.link.site }}</span> <FontAwesomeIcon icon="fa-solid fa-arrow-up-right-from-square" size="xs" />
+                </NuxtLink>
+              </div>
             </div>
           </div>
         </swiper-slide>

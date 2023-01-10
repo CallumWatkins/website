@@ -64,6 +64,12 @@ const { getImageSrc } = useImages();
   width: 100%;
 }
 
+.swiper:not(.swiper-initialized) ::v-deep(.swiper-wrapper) {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 .swiper-slide {
   width: auto;
   height: auto;

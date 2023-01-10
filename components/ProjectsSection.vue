@@ -10,6 +10,8 @@
     <div class="projects-row">
       <swiper
         :grabCursor="true"
+        :modules="swiperModules"
+        :scrollbar="{ hide: true }"
         :slides-per-view="'auto'"
         >
         <swiper-slide v-for="p in Projects">
@@ -43,6 +45,10 @@
 import Projects from "@/content/projects.json";
 import { Swiper, SwiperSlide } from 'swiper/vue';
 import 'swiper/scss';
+import "swiper/scss/scrollbar";
+import { A11y, Scrollbar } from "swiper";
+
+const swiperModules = [A11y, Scrollbar];
 const { getImageSrc } = useImages();
 </script>
 

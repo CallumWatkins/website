@@ -70,6 +70,21 @@
     }
   },
   {
+    "title": "Bank Statement Parser",
+    "description": "An efficient command-line tool for converting raw text from bank statements to CSV format using a regular expression.",
+    "images": [
+      "bank-statement-parser.avif",
+      "bank-statement-parser.png"
+    ],
+    "badges": [
+      "Rust"
+    ],
+    "link": {
+      "site": "GitHub",
+      "url": "https://github.com/CallumWatkins/bank-statement-parser"
+    }
+  },
+  {
     "title": "MO Books",
     "description": "A simple and intuitive modern application for writing and publishing an online book by interfacing with existing media and web technologies, such as the Markdown language.",
     "images": [
@@ -84,21 +99,6 @@
     "link": {
       "site": "GitHub",
       "url": "https://github.com/CallumWatkins/mo-books"
-    }
-  },
-  {
-    "title": "Bank Statement Parser",
-    "description": "An efficient command-line tool for converting raw text from bank statements to CSV format using a regular expression.",
-    "images": [
-      "bank-statement-parser.avif",
-      "bank-statement-parser.png"
-    ],
-    "badges": [
-      "Rust"
-    ],
-    "link": {
-      "site": "GitHub",
-      "url": "https://github.com/CallumWatkins/bank-statement-parser"
     }
   },
   {

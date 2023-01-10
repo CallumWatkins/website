@@ -8,6 +8,7 @@ import {
   faCircle,
   faStar,
   faCodeCommit,
+  faArrowUpRightFromSquare,
   faArrowLeft,
 } from '@fortawesome/free-solid-svg-icons';
 
@@ -34,6 +35,7 @@ library.add(
   faCircle,
   faStar,
   faCodeCommit,
+  faArrowUpRightFromSquare,
   faArrowLeft,
   faEnvelope,
   faTelegram,

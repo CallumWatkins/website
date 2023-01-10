@@ -192,5 +192,21 @@
       "site": "GitHub",
       "url": "https://github.com/CallumWatkins/file-date-range-checker"
     }
+  },
+  {
+    "title": "Companies House Company List Updater",
+    "description": "A web application that enables the mass retrieval of public company data through the Companies House API.",
+    "images": [
+      "company-list-updater.avif",
+      "company-list-updater.png"
+    ],
+    "badges": [
+      "Vue",
+      "Typescript"
+    ],
+    "link": {
+      "site": "GitHub",
+      "url": "https://github.com/CallumWatkins/ch-company-list-updater"
+    }
   }
 ]

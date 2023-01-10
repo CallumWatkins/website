@@ -18,20 +18,19 @@
     }
   },
   {
-    "title": "MO Books",
-    "description": "A simple and intuitive modern application for writing and publishing an online book by interfacing with existing media and web technologies, such as the Markdown language.",
+    "title": "Companies House Company List Updater",
+    "description": "A web application that enables the mass retrieval of public company data through the Companies House API.",
     "images": [
-      "mo-books.avif",
-      "mo-books.png"
+      "company-list-updater.avif",
+      "company-list-updater.png"
     ],
     "badges": [
       "Vue",
-      "SCSS",
-      "Markdown"
+      "Typescript"
     ],
     "link": {
       "site": "GitHub",
-      "url": "https://github.com/CallumWatkins/mo-books"
+      "url": "https://github.com/CallumWatkins/ch-company-list-updater"
     }
   },
   {
@@ -71,6 +70,38 @@
     }
   },
   {
+    "title": "MO Books",
+    "description": "A simple and intuitive modern application for writing and publishing an online book by interfacing with existing media and web technologies, such as the Markdown language.",
+    "images": [
+      "mo-books.avif",
+      "mo-books.png"
+    ],
+    "badges": [
+      "Vue",
+      "SCSS",
+      "Markdown"
+    ],
+    "link": {
+      "site": "GitHub",
+      "url": "https://github.com/CallumWatkins/mo-books"
+    }
+  },
+  {
+    "title": "Bank Statement Parser",
+    "description": "An efficient command-line tool for converting raw text from bank statements to CSV format using a regular expression.",
+    "images": [
+      "bank-statement-parser.avif",
+      "bank-statement-parser.png"
+    ],
+    "badges": [
+      "Rust"
+    ],
+    "link": {
+      "site": "GitHub",
+      "url": "https://github.com/CallumWatkins/bank-statement-parser"
+    }
+  },
+  {
     "title": "Functional Language Compiler",
     "description": "A complete pipeline for lexing, parsing, and compiling a functional language to LLVM IR, with extensive use made of regular expressions, automata, context free grammars, and abstract syntax trees.",
     "images": [
@@ -79,17 +110,6 @@
     ],
     "badges": [
       "Scala"
-    ]
-  },
-  {
-    "title": "Sudoku Solver",
-    "description": "An exercise in data structures (circular buffer, stack, linked list, AVL binary search tree), algorithms (searching, sorting, and solving), and string manipulation.",
-    "images": [
-      "sudoku-solver.avif",
-      "sudoku-solver.png"
-    ],
-    "badges": [
-      "C++"
     ]
   },
   {
@@ -127,6 +147,22 @@
     }
   },
   {
+    "title": "File Date Range Checker",
+    "description": "A command-line tool to identify missing date ranges from a directory containing files with date range names.",
+    "images": [
+      "file-date-range-checker.png"
+    ],
+    "badges": [
+      "C#",
+      ".NET",
+      "CLI"
+    ],
+    "link": {
+      "site": "GitHub",
+      "url": "https://github.com/CallumWatkins/file-date-range-checker"
+    }
+  },
+  {
     "title": "MultiRun",
     "description": "A quick and efficient tool for launching multiple applications on a Windows system with one click, including support for custom arguments, verbs, and delays.",
     "images": [
@@ -161,6 +197,17 @@
     }
   },
   {
+    "title": "Sudoku Solver",
+    "description": "An exercise in data structures (circular buffer, stack, linked list, AVL binary search tree), algorithms (searching, sorting, and solving), and string manipulation.",
+    "images": [
+      "sudoku-solver.avif",
+      "sudoku-solver.png"
+    ],
+    "badges": [
+      "C++"
+    ]
+  },
+  {
     "title": "AWS Log Merger",
     "description": "A command-line tool for aggregating AWS CloudFront and S3 log files.",
     "images": [
@@ -175,53 +222,6 @@
     "link": {
       "site": "GitHub",
       "url": "https://github.com/CallumWatkins/aws-log-merger"
-    }
-  },
-  {
-    "title": "File Date Range Checker",
-    "description": "A command-line tool to check if a directory containing files with named date ranges is missing any dates from a given range.",
-    "images": [
-      "file-date-range-checker.png"
-    ],
-    "badges": [
-      "C#",
-      ".NET",
-      "CLI"
-    ],
-    "link": {
-      "site": "GitHub",
-      "url": "https://github.com/CallumWatkins/file-date-range-checker"
-    }
-  },
-  {
-    "title": "Bank Statement Parser",
-    "description": "An efficient command-line tool for converting raw text from bank statements to CSV format using a regular expression.",
-    "images": [
-      "bank-statement-parser.avif",
-      "bank-statement-parser.png"
-    ],
-    "badges": [
-      "Rust"
-    ],
-    "link": {
-      "site": "GitHub",
-      "url": "https://github.com/CallumWatkins/bank-statement-parser"
-    }
-  },
-  {
-    "title": "Companies House Company List Updater",
-    "description": "A web application that enables the mass retrieval of public company data through the Companies House API.",
-    "images": [
-      "company-list-updater.avif",
-      "company-list-updater.png"
-    ],
-    "badges": [
-      "Vue",
-      "Typescript"
-    ],
-    "link": {
-      "site": "GitHub",
-      "url": "https://github.com/CallumWatkins/ch-company-list-updater"
     }
   }
 ]

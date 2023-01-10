@@ -161,6 +161,23 @@
     }
   },
   {
+    "title": "AWS Log Merger",
+    "description": "A command-line tool for aggregating AWS CloudFront and S3 log files.",
+    "images": [
+      "aws-log-merger.avif",
+      "aws-log-merger.png"
+    ],
+    "badges": [
+      "C#",
+      ".NET",
+      "CLI"
+    ],
+    "link": {
+      "site": "GitHub",
+      "url": "https://github.com/CallumWatkins/aws-log-merger"
+    }
+  },
+  {
     "title": "File Date Range Checker",
     "description": "A command-line tool to check if a directory containing files with named date ranges is missing any dates from a given range.",
     "images": [

@@ -56,7 +56,8 @@ const { getImageSrc } = useImages();
 .projects-row {
   max-width: 1200px;
   width: 100%;
-  margin: 0 auto;
+  margin-bottom: -40px;
+  margin-inline: auto;
 }
 
 .swiper {
@@ -71,7 +72,7 @@ const { getImageSrc } = useImages();
 .card-wrapper {
   height: 100%;
   box-sizing: border-box;
-  padding: 20px 15px;
+  padding: 20px 15px 40px 15px;
 }
 
 .project-card {

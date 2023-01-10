@@ -111,7 +111,7 @@ body {
 a,
 a:visited {
   color: black;
-  transition: all 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
 }
 
 a:hover,
@@ -579,7 +579,9 @@ select {
   max-width: 100%;
   background: transparent;
   border-bottom: 1px solid rgba(0, 0, 0, 0.3);
-  transition: all 0.3s ease-in-out;
+  transition-property: color, border-color;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
 }
 
 .ss-custom-select {
@@ -641,7 +643,7 @@ input[type="password"]:focus,
 textarea:focus,
 select:focus {
   color: var(--accent-secondary);
-  border-bottom: 1px solid var(--accent-primary);
+  border-color: var(--accent-primary);
 }
 
 label,
@@ -776,7 +778,9 @@ input[type="button"] {
   text-align: center;
   white-space: nowrap;
   border: 3px solid var(--grey-15);
-  transition: all 0.3s ease-in-out;
+  transition-property: background-color, border-color, color;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
 }
 
 .button:hover,

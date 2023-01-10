@@ -90,7 +90,7 @@ header {
       top: 50%;
       bottom: auto;
       left: auto;
-      transition: background 0.2s ease-in-out;
+      transition: background-color 0.2s ease-in-out;
 
       &::before,
       &::after {
@@ -194,6 +194,7 @@ nav ul {
       padding: 15px 0;
       line-height: 16px;
       border: none;
+      transition: padding-left 0.3s ease-in-out;
 
       &:hover {
         color: var(--accent-primary);

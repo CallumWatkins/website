@@ -37,6 +37,7 @@ a:focus, a:hover {
 .flair {
   padding: 1rem;
   background-color: #2d2d2d;
+  border-radius: 0.5rem;
   transition-property: transform, box-shadow;
   transition-duration: 0.25s;
   transition-timing-function: ease-out;

@@ -9,6 +9,7 @@
         <h2>An error occurred</h2>
       </template>
       <p v-if="error.statusMessage">{{ error.statusMessage }}</p>
+      <p v-else-if="error.message">{{ error.message }}</p>
       <NuxtLink href="/"><FontAwesomeIcon icon="fa-solid fa-arrow-left" /> Back Home</NuxtLink>
     </section>
     <AppFooter />

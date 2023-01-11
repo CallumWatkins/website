@@ -46,7 +46,7 @@ a:focus, a:hover {
   &__grid {
     color: white;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI Adjusted", "Segoe UI", "Liberation Sans", sans-serif;
-    width: 31rem;
+    width: 32rem;
     height: 6rem;
     display: grid;
     grid-template-columns: 6rem 1fr 2.5rem;

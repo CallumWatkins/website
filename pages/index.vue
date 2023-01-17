@@ -64,7 +64,7 @@ const jsonLd = computed(() =>
       sameAs: [
         "https://keybase.io/CallumWatkins",
         "https://www.facebook.com/Watkins.Callum",
-        "https://twitter.com/_CallumWatkins",
+        "https://twitter.com/CallumWatkins",
         "https://www.linkedin.com/in/CallumWatkins",
         "https://stackoverflow.com/users/4415734/callum-watkins",
         "https://github.com/CallumWatkins",

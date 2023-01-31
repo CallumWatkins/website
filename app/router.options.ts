@@ -1,12 +1,12 @@
 import type { RouterOptions } from "@nuxt/schema";
 
 export default <RouterOptions>{
-  scrollBehavior: async (to, from, savedPosition) => {
+  scrollBehavior: async (to, _from, savedPosition) => {
     if (savedPosition) return savedPosition;
 
     const findHashElement = async (
       hash: string,
-      attempt: number = 0,
+      attempt = 0,
     ): Promise<HTMLElement | null> => {
       return (
         (document.querySelector(hash) as HTMLElement | null) ||

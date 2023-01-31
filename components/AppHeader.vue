@@ -29,17 +29,17 @@
 </template>
 
 <script setup lang="ts">
+interface NavItem {
+  id: string;
+  text: string;
+}
+
 const navOpen = ref(false);
 
 defineProps<{
   navItems: NavItem[];
   activeNavItemId: string;
 }>();
-
-interface NavItem {
-  id: string;
-  text: string;
-}
 </script>
 
 <style lang="scss" scoped>

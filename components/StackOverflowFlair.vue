@@ -1,11 +1,11 @@
 <template>
   <GenericFlair
-    profileName="Callum Watkins"
-    profilePicture="/logos/CW_Logo.svg"
+    profile-name="Callum Watkins"
+    profile-picture="/logos/CW_Logo.svg"
     :logo="StackOverflowLogo"
     href="https://stackoverflow.com/users/4415734/callum-watkins"
   >
-    <template v-slot:details>
+    <template #details>
       <template v-if="user">
         <div class="flair__rep-badges">
           <div>
@@ -52,19 +52,10 @@
 <script setup lang="ts">
 import StackOverflowLogo from "@/assets/images/stack-overflow.svg";
 
-const userId = "4415734";
-
-const { data } = useLazyFetch<SOUsers>(
-  `https://api.stackexchange.com/2.3/users/${userId}?site=stackoverflow&filter=!duvJ0C1sKBF535KHUvUIF-QmcM7`,
-  {
-    server: false,
-  },
-);
-
-const user = computed(() => data.value?.items[0]);
-
-interface SOUsers {
-  items: SOUser[];
+interface SOUserBadgeCounts {
+  bronze: number;
+  silver: number;
+  gold: number;
 }
 
 interface SOUser {
@@ -76,11 +67,20 @@ interface SOUser {
   user_id: number;
 }
 
-interface SOUserBadgeCounts {
-  bronze: number;
-  silver: number;
-  gold: number;
+interface SOUsers {
+  items: SOUser[];
 }
+
+const userId = "4415734";
+
+const { data } = useLazyFetch<SOUsers>(
+  `https://api.stackexchange.com/2.3/users/${userId}?site=stackoverflow&filter=!duvJ0C1sKBF535KHUvUIF-QmcM7`,
+  {
+    server: false,
+  },
+);
+
+const user = computed(() => data.value?.items[0]);
 </script>
 
 <style lang="scss" scoped>

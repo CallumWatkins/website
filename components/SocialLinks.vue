@@ -7,7 +7,7 @@
         rel="noopener noreferrer me"
         :title="s.title"
       >
-        <FontAwesomeIcon :icon="s.icon" fixedWidth />
+        <FontAwesomeIcon :icon="s.icon" fixed-width />
       </NuxtLink>
     </div>
   </div>

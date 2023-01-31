@@ -9,6 +9,8 @@ Made with [Nuxt 3](https://nuxt.com/docs/getting-started/introduction).
 - Visual Studio Code
 - 'Vue Language Features (Volar)' extension + Takeover Mode
 - 'EditorConfig for VS Code' extension
+- 'ESLint' extension
+- 'Prettier - Code formatter' extension
 
 ## Setup
 Install dependencies:

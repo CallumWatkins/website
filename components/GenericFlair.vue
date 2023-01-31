@@ -3,7 +3,7 @@
     <div class="flair">
       <div class="flair__grid">
         <div class="flair__profile-picture">
-          <img :src="profilePicture">
+          <img :src="profilePicture" />
         </div>
         <div class="flair__service-logo">
           <img :src="logo" />
@@ -19,18 +19,19 @@
 
 <script setup lang="ts">
 defineProps<{
-  profileName: string,
-  profilePicture: string,
-  logo: string,
-  href: string,
+  profileName: string;
+  profilePicture: string;
+  logo: string;
+  href: string;
 }>();
 </script>
 
 <style lang="scss" scoped>
-a:focus, a:hover {
+a:focus,
+a:hover {
   .flair {
     transform: translateY(-4px);
-    box-shadow: 0px 5px 5px 1px rgba(150,150,150,1);
+    box-shadow: 0px 5px 5px 1px rgba(150, 150, 150, 1);
   }
 }
 
@@ -45,7 +46,8 @@ a:focus, a:hover {
 
   &__grid {
     color: white;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI Adjusted", "Segoe UI", "Liberation Sans", sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI Adjusted",
+      "Segoe UI", "Liberation Sans", sans-serif;
     width: 32rem;
     height: 6rem;
     display: grid;

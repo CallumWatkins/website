@@ -13,15 +13,7 @@
       ]
     },
     "icon": "fa-solid fa-graduation-cap",
-    "badges": [
-      "C++",
-      "Java",
-      "Scala",
-      "JavaScript",
-      "PHP",
-      "SQL",
-      "Docker"
-    ]
+    "badges": ["C++", "Java", "Scala", "JavaScript", "PHP", "SQL", "Docker"]
   },
   {
     "level": "GCE Advanced Level",
@@ -37,12 +29,7 @@
       ]
     },
     "icon": "fa-solid fa-school",
-    "badges": [
-      "C#",
-      "WPF",
-      "PHP",
-      "SQL"
-    ]
+    "badges": ["C#", "WPF", "PHP", "SQL"]
   },
   {
     "level": "GCE Advanced Subsidiary Level",
@@ -59,9 +46,7 @@
       ]
     },
     "icon": "fa-solid fa-school",
-    "badges": [
-      "Java"
-    ]
+    "badges": ["Java"]
   },
   {
     "level": "GCSE",
@@ -84,11 +69,6 @@
       ]
     },
     "icon": "fa-solid fa-school",
-    "badges": [
-      "Python",
-      "PHP",
-      "HTML",
-      "CSS"
-    ]
+    "badges": ["Python", "PHP", "HTML", "CSS"]
   }
 ]

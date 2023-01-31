@@ -13,12 +13,17 @@
         :modules="swiperModules"
         :scrollbar="{ hide: true }"
         :slides-per-view="'auto'"
-        >
+      >
         <swiper-slide v-for="p in Projects">
           <div class="card-wrapper">
             <div class="project-card">
               <div class="project-card__image">
-                <ImageSources :sources="p.images.map(img => getImageSrc(`projects/${img}`))" alt="" />
+                <ImageSources
+                  :sources="
+                    p.images.map((img) => getImageSrc(`projects/${img}`))
+                  "
+                  alt=""
+                />
               </div>
               <div class="project-card__title">{{ p.title }}</div>
               <div class="project-card__description">{{ p.description }}</div>
@@ -26,11 +31,12 @@
                 <BadgeCollection v-if="p.badges" :badges="p.badges" />
               </div>
               <div class="project-card__link">
-                <NuxtLink
-                  v-if="p.link"
-                  :href="p.link.url"
-                  target="_blank"
-                  >View <span v-if="p.link.site">on {{ p.link.site }}</span> <FontAwesomeIcon icon="fa-solid fa-arrow-up-right-from-square" size="xs" />
+                <NuxtLink v-if="p.link" :href="p.link.url" target="_blank"
+                  >View <span v-if="p.link.site">on {{ p.link.site }}</span>
+                  <FontAwesomeIcon
+                    icon="fa-solid fa-arrow-up-right-from-square"
+                    size="xs"
+                  />
                 </NuxtLink>
               </div>
             </div>
@@ -43,8 +49,8 @@
 
 <script setup lang="ts">
 import Projects from "@/content/projects.json";
-import { Swiper, SwiperSlide } from 'swiper/vue';
-import 'swiper/scss';
+import { Swiper, SwiperSlide } from "swiper/vue";
+import "swiper/scss";
 import "swiper/scss/scrollbar";
 import { A11y, Scrollbar } from "swiper";
 

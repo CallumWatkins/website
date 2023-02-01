@@ -1,5 +1,6 @@
 <template>
   <GenericFlair
+    site-name="GitHub"
     profile-name="Callum Watkins"
     profile-picture="/logos/CW_Logo.svg"
     :logo="GitHubLogo"

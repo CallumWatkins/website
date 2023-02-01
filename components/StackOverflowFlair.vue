@@ -1,5 +1,6 @@
 <template>
   <GenericFlair
+    site-name="Stack Overflow"
     profile-name="Callum Watkins"
     profile-picture="/logos/CW_Logo.svg"
     :logo="StackOverflowLogo"

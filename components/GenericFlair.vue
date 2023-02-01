@@ -3,10 +3,13 @@
     <div class="flair">
       <div class="flair__grid">
         <div class="flair__profile-picture">
-          <img :src="profilePicture" />
+          <img
+            :src="profilePicture"
+            :alt="`My profile picture on ${siteName}.`"
+          />
         </div>
         <div class="flair__service-logo">
-          <img :src="logo" />
+          <img :src="logo" :alt="`${siteName} logo.`" />
         </div>
         <div class="flair__name">{{ profileName }}</div>
         <div class="flair__details">
@@ -19,6 +22,7 @@
 
 <script setup lang="ts">
 defineProps<{
+  siteName: string;
   profileName: string;
   profilePicture: string;
   logo: string;

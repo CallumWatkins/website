@@ -4,19 +4,17 @@ export default <RouterOptions>{
   scrollBehavior: async (to, _from, savedPosition) => {
     if (savedPosition) return savedPosition;
 
-    const findHashElement = async (
+    const findHashElement = (
       hash: string,
       attempt = 0,
     ): Promise<HTMLElement | null> => {
-      return (
-        (document.querySelector(hash) as HTMLElement | null) ||
-        new Promise<HTMLElement | null>((resolve) => {
-          if (attempt > 10) {
-            return resolve(null);
-          }
-          setTimeout(() => resolve(findHashElement(hash, ++attempt || 1)), 100);
-        })
-      );
+      const element: HTMLElement | null = document.querySelector(hash);
+      if (element) return Promise.resolve(element);
+
+      return new Promise<HTMLElement | null>((resolve) => {
+        if (attempt > 10) return resolve(null);
+        setTimeout(() => resolve(findHashElement(hash, ++attempt || 1)), 100);
+      });
     };
 
     if (to.hash) {

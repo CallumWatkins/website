@@ -14,7 +14,7 @@
         :scrollbar="{ hide: true }"
         :slides-per-view="'auto'"
       >
-        <swiper-slide v-for="p in Projects">
+        <swiper-slide v-for="p in Projects" :key="p.title">
           <div class="card-wrapper">
             <div class="project-card">
               <div class="project-card__image">

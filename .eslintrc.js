@@ -4,5 +4,6 @@ module.exports = {
   rules: {
     "comma-dangle": ["error", "always-multiline"],
     "no-console": "off",
+    "vue/require-v-for-key": "off",
   },
 };

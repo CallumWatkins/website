@@ -18,5 +18,8 @@ export default defineNuxtConfig({
         },
       },
     },
+    esbuild: {
+      drop: process.env.NODE_ENV === "production" ? ["console"] : undefined,
+    },
   },
 });

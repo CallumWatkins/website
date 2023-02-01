@@ -17,7 +17,21 @@ export default function (initialSectionId: string) {
   onUnmounted(() => window.removeEventListener("scroll", onScroll));
 
   function onScroll() {
-    const scrollPos = window.pageYOffset;
+    const scrollPos = window.scrollY;
+    const finalScrollPos =
+      document.body.scrollHeight -
+      document.querySelector("footer")!.clientHeight -
+      window.innerHeight;
+
+    // The last section should always activate if we are scrolled to the bottom
+    // of the page (minus the height of the footer).
+    if (scrollPos >= finalScrollPos) {
+      currentScrolledSectionId.value = sections.value
+        .at(-1)!
+        .getAttribute("id")!;
+      return;
+    }
+
     const topOffset = window.innerHeight / 4;
 
     for (const section of sections.value) {
@@ -26,6 +40,7 @@ export default function (initialSectionId: string) {
 
       if (scrollPos > sectionTop && scrollPos <= sectionTop + sectionHeight) {
         currentScrolledSectionId.value = section.getAttribute("id")!;
+        return;
       }
     }
   }

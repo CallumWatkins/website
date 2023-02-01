@@ -2,21 +2,32 @@
   <header>
     <div class="row">
       <div class="menu" :class="{ open: navOpen }">
-        <nav class="menu__dropdown">
+        <nav id="main-nav" class="menu__dropdown">
           <ul>
             <li
               v-for="navItem in navItems"
               :key="navItem.id"
               :class="{ current: activeNavItemId === navItem.id }"
             >
-              <NuxtLink :href="`#${navItem.id}`" @click="navOpen = false">{{
-                navItem.text
-              }}</NuxtLink>
+              <NuxtLink
+                :href="`#${navItem.id}`"
+                :aria-current="
+                  activeNavItemId === navItem.id ? 'page' : undefined
+                "
+                @click="navOpen = false"
+                >{{ navItem.text }}</NuxtLink
+              >
             </li>
           </ul>
         </nav>
         <div class="menu__header">
-          <a class="menu__toggle" href="#" @click.prevent="navOpen = !navOpen">
+          <a
+            class="menu__toggle"
+            href="#"
+            aria-controls="main-nav"
+            :aria-expanded="navOpen"
+            @click.prevent="navOpen = !navOpen"
+          >
             <span>Menu</span>
           </a>
           <div class="menu__logo">

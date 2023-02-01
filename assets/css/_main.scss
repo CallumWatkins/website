@@ -29,7 +29,7 @@
  *
  * -------------------------------------------------------------------
  */
-@use 'fonts';
+@use "fonts";
 
 :root {
   --accent-primary: #3bb30a;
@@ -881,7 +881,6 @@ input::-moz-focus-inner {
  * ------------------------------------------------------------------- 
  */
 
-
 /**
  * additional typo styles - (_additional-typo.scss)
  * -------------------------------------------------------------------
@@ -1174,10 +1173,10 @@ section.dark-grey a:active {
 .intro-content .intro-position span {
   display: inline-block;
   padding-inline: 2rem;
-  border-left: 2px solid rgba(255,255,255,0.3);
+  border-left: 2px solid rgba(255, 255, 255, 0.3);
 
   &:last-child {
-    border-right: 2px solid rgba(255,255,255,0.3);
+    border-right: 2px solid rgba(255, 255, 255, 0.3);
   }
 }
 

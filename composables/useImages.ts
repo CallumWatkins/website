@@ -4,8 +4,12 @@ interface ImagesComposable {
   getImageSrc: (fileName: string) => string;
 }
 
-export default function(): ImagesComposable {
-  const images = computed(() => import.meta.glob("@/assets/images/**/*.(png|jpg|jpeg|svg|avif|webp)", { eager: true }));
+export default function (): ImagesComposable {
+  const images = computed(() =>
+    import.meta.glob("@/assets/images/**/*.(png|jpg|jpeg|svg|avif|webp)", {
+      eager: true,
+    }),
+  );
 
   const getImageSrc = (fileName: string): string => {
     for (const path in images.value) {

@@ -30,7 +30,11 @@
                   <div>{{ g.subject }}</div>
                 </template>
               </div>
-              <p v-if="e.description" v-for="d in e.description.split('\n')">{{ d }}</p>
+              <template v-if="e.description">
+                <p v-for="d in e.description.split('\n')">
+                  {{ d }}
+                </p>
+              </template>
               <BadgeCollection v-if="e.badges" :badges="e.badges" />
             </div>
           </div>

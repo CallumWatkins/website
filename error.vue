@@ -10,7 +10,9 @@
       </template>
       <p v-if="error.statusMessage">{{ error.statusMessage }}</p>
       <p v-else-if="error.message">{{ error.message }}</p>
-      <NuxtLink href="/"><FontAwesomeIcon icon="fa-solid fa-arrow-left" /> Back Home</NuxtLink>
+      <NuxtLink href="/"
+        ><FontAwesomeIcon icon="fa-solid fa-arrow-left" /> Back Home</NuxtLink
+      >
     </section>
     <AppFooter />
   </div>
@@ -18,7 +20,7 @@
 
 <script setup lang="ts">
 const props = defineProps<{
-  error: any,
+  error: any;
 }>();
 
 useHead({

@@ -1,16 +1,20 @@
 <template>
   <picture>
     <template v-for="(source, i) in sources">
-      <source v-if="i < sources.length - 1" :srcset="source" :type="getType(source)">
-      <img v-else :src="source" :alt="alt">
+      <source
+        v-if="i < sources.length - 1"
+        :srcset="source"
+        :type="getType(source)"
+      />
+      <img v-else :src="source" :alt="alt" />
     </template>
   </picture>
 </template>
 
 <script setup lang="ts">
 defineProps<{
-  sources: string[],
-  alt: string,
+  sources: string[];
+  alt: string;
 }>();
 
 function getType(srcset: string) {

@@ -5,9 +5,13 @@
         <nav class="menu__dropdown">
           <ul>
             <li
-              v-for="navItem in navItems" :key="navItem.id"
-              :class="{ current: activeNavItemId === navItem.id }">
-              <NuxtLink :href="`#${navItem.id}`" @click="navOpen = false">{{ navItem.text }}</NuxtLink>
+              v-for="navItem in navItems"
+              :key="navItem.id"
+              :class="{ current: activeNavItemId === navItem.id }"
+            >
+              <NuxtLink :href="`#${navItem.id}`" @click="navOpen = false">{{
+                navItem.text
+              }}</NuxtLink>
             </li>
           </ul>
         </nav>
@@ -25,17 +29,17 @@
 </template>
 
 <script setup lang="ts">
+interface NavItem {
+  id: string;
+  text: string;
+}
+
 const navOpen = ref(false);
 
 defineProps<{
-  navItems: NavItem[],
-  activeNavItemId: string,
+  navItems: NavItem[];
+  activeNavItemId: string;
 }>();
-
-interface NavItem {
-  id: string,
-  text: string,
-}
 </script>
 
 <style lang="scss" scoped>

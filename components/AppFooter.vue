@@ -4,7 +4,16 @@
       <div class="footer">
         <div class="footer__copyright">
           <div>&copy; 2018–{{ new Date().getFullYear() }} Callum Watkins</div>
-          <div>Design by <NuxtLink href="https://www.styleshout.com" target="_blank" rel="nofollow noopener noreferrer">Styleshout</NuxtLink> &amp; me</div>
+          <div>
+            Design by
+            <NuxtLink
+              href="https://www.styleshout.com"
+              target="_blank"
+              rel="nofollow noopener noreferrer"
+              >Styleshout</NuxtLink
+            >
+            &amp; me
+          </div>
         </div>
         <SocialLinks class="footer__social" />
       </div>

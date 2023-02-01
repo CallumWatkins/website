@@ -6,15 +6,14 @@ interface Env {
 export const onRequestGet: PagesFunction<Env> = async (context) => {
   if (!context.env.GITHUB_TOKEN) throw new Error("GITHUB_TOKEN missing");
 
-  return await fetch('https://api.github.com/graphql', {
-    method: 'POST',
+  return await fetch("https://api.github.com/graphql", {
+    method: "POST",
     headers: {
-      'User-Agent': 'CloudflareWorker',
-      'Authorization': `bearer ${context.env.GITHUB_TOKEN}`
+      "User-Agent": "CloudflareWorker",
+      Authorization: `bearer ${context.env.GITHUB_TOKEN}`,
     },
-    body: JSON.stringify(
-      {
-        query: `
+    body: JSON.stringify({
+      query: `
           {
             user(login: "CallumWatkins") {
               contributionsCollection {
@@ -30,8 +29,7 @@ export const onRequestGet: PagesFunction<Env> = async (context) => {
               }
               createdAt
             }
-          }`
-      }
-    )
+          }`,
+    }),
   });
-}
+};

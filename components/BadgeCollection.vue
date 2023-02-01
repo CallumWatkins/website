@@ -6,7 +6,7 @@
 
 <script setup lang="ts">
 defineProps<{
-  badges: string[]
+  badges: string[];
 }>();
 </script>
 
@@ -16,8 +16,7 @@ defineProps<{
   gap: 1rem;
   flex-wrap: wrap;
 
-  & > *
-  {
+  & > * {
     font-family: "poppins-semibold", sans-serif;
     font-size: 0.8em;
     padding-inline: 1rem;

@@ -2,7 +2,21 @@
   <header>
     <div class="row">
       <div class="menu" :class="{ open: navOpen }">
-        <nav id="main-nav" class="menu__dropdown">
+        <div class="menu__header">
+          <button
+            class="menu__toggle"
+            type="button"
+            aria-controls="main-nav"
+            :aria-expanded="navOpen"
+            @click="navOpen = !navOpen"
+          >
+            <span>Menu</span>
+          </button>
+          <div class="menu__logo">
+            <NuxtLink href="/" tabindex="-1">Callum Watkins</NuxtLink>
+          </div>
+        </div>
+        <nav id="main-nav" class="menu__dropdown" :aria-hidden="!navOpen">
           <ul>
             <li
               v-for="navItem in navItems"
@@ -14,26 +28,13 @@
                 :aria-current="
                   activeNavItemId === navItem.id ? 'page' : undefined
                 "
+                :tabindex="navOpen ? 0 : -1"
                 @click="navOpen = false"
                 >{{ navItem.text }}</NuxtLink
               >
             </li>
           </ul>
         </nav>
-        <div class="menu__header">
-          <a
-            class="menu__toggle"
-            href="#"
-            aria-controls="main-nav"
-            :aria-expanded="navOpen"
-            @click.prevent="navOpen = !navOpen"
-          >
-            <span>Menu</span>
-          </a>
-          <div class="menu__logo">
-            <NuxtLink href="/">Callum Watkins</NuxtLink>
-          </div>
-        </div>
       </div>
     </div>
   </header>
@@ -87,9 +88,12 @@ header {
   &__toggle {
     width: 40px;
     height: 40px;
-    margin-left: 20px;
+    margin: 0 0 0 20px;
+    padding: 0;
     display: block;
     position: relative;
+    background: none;
+    border: none;
 
     span {
       display: block;
@@ -137,6 +141,7 @@ header {
     width: 100%;
     bottom: 0;
     background: black;
+    z-index: -1;
   }
 
   &__logo {

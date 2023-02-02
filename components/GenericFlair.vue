@@ -1,5 +1,10 @@
 <template>
-  <NuxtLink :href="href" target="_blank" rel="noopener noreferrer me">
+  <NuxtLink
+    :href="href"
+    target="_blank"
+    rel="noopener noreferrer me"
+    :aria-label="`${profileName} on ${siteName}`"
+  >
     <div class="flair">
       <div class="flair__grid">
         <div class="flair__profile-picture">

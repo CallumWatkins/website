@@ -10,21 +10,47 @@
       <template v-if="user">
         <div class="flair__rep-badges">
           <div>
-            <FontAwesomeIcon icon="fa-solid fa-star" size="2xs" />
-            {{ user.reputation.toLocaleString() }}
+            <span
+              :title="`${user.reputation.toLocaleString()} reputation`"
+              aria-hidden="true"
+            >
+              <FontAwesomeIcon icon="fa-solid fa-star" size="2xs" />
+              {{ user.reputation.toLocaleString() }}
+            </span>
+            <span class="sr-only"
+              >{{ user.reputation.toLocaleString() }} reputation.</span
+            >
           </div>
           <div>
-            <span class="gold"
+            <span
+              class="gold"
+              :title="`${user.badge_counts.gold} gold badges`"
+              aria-hidden="true"
               ><FontAwesomeIcon icon="fa-solid fa-circle" size="2xs" />
               {{ user.badge_counts.gold }}</span
             >
-            <span class="silver"
+            <span class="sr-only"
+              >{{ user.badge_counts.gold }} gold badges.</span
+            >
+            <span
+              class="silver"
+              :title="`${user.badge_counts.silver} silver badges`"
+              aria-hidden="true"
               ><FontAwesomeIcon icon="fa-solid fa-circle" size="2xs" />
               {{ user.badge_counts.silver }}</span
             >
-            <span class="bronze"
+            <span class="sr-only"
+              >{{ user.badge_counts.silver }} silver badges.</span
+            >
+            <span
+              class="bronze"
+              :title="`${user.badge_counts.bronze} bronze badges`"
+              aria-hidden="true"
               ><FontAwesomeIcon icon="fa-solid fa-circle" size="2xs" />
               {{ user.badge_counts.bronze }}</span
+            >
+            <span class="sr-only"
+              >{{ user.badge_counts.bronze }} bronze badges.</span
             >
           </div>
         </div>
@@ -45,7 +71,7 @@
           </div>
         </div>
       </template>
-      <template v-else> Loading... </template>
+      <template v-else>Loading...</template>
     </template>
   </GenericFlair>
 </template>

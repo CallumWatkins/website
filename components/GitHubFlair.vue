@@ -35,7 +35,7 @@
           </div>
         </div>
       </template>
-      <template v-else> Loading... </template>
+      <template v-else>Loading...</template>
     </template>
   </GenericFlair>
 </template>

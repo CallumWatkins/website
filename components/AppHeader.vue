@@ -94,6 +94,11 @@ header {
     position: relative;
     background: none;
     border: none;
+    outline-color: var(--accent-primary);
+
+    &:focus-visible {
+      outline: 2px solid var(--accent-primary);
+    }
 
     span {
       display: block;
@@ -216,7 +221,8 @@ nav ul {
       border: none;
       transition: padding-left 0.3s ease-in-out;
 
-      &:hover {
+      &:hover,
+      &:focus-visible {
         color: var(--accent-primary);
         padding-left: 1rem;
       }

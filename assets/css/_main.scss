@@ -121,6 +121,10 @@ a:active {
   outline: 0;
 }
 
+a:not(.button):not(:has(> *:not(:is(svg, span)))):focus-visible {
+  text-decoration: underline !important;
+}
+
 /** 
  * ===================================================================
  * 03. typography & general theme styles - (_document-setup.scss)
@@ -778,7 +782,7 @@ input[type="button"] {
   text-align: center;
   white-space: nowrap;
   border: 3px solid var(--grey-15);
-  transition-property: background-color, border-color, color;
+  transition-property: background-color, border-color, color, outline-color;
   transition-duration: 0.3s;
   transition-timing-function: ease-in-out;
 }
@@ -866,6 +870,13 @@ button.stroke:hover,
 .button.stroke:hover {
   border-color: var(--accent-secondary);
   color: var(--accent-secondary);
+}
+
+button.stroke:focus-visible,
+.button.stroke:focus-visible {
+  border-color: var(--accent-secondary);
+  color: var(--accent-secondary);
+  outline: 2px solid var(--accent-secondary);
 }
 
 button::-moz-focus-inner,

@@ -32,7 +32,8 @@
               </div>
               <div class="project-card__link">
                 <NuxtLink v-if="p.link" :href="p.link.url" target="_blank"
-                  >View <span v-if="p.link.site">on {{ p.link.site }}</span>
+                  >View
+                  <span v-if="p.link.site">on {{ p.link.site }}&nbsp;</span>
                   <FontAwesomeIcon
                     icon="fa-solid fa-arrow-up-right-from-square"
                     size="xs"

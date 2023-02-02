@@ -1,6 +1,11 @@
 module.exports = {
   root: true,
-  extends: ["@nuxtjs/eslint-config-typescript", "plugin:prettier/recommended"],
+  plugins: ["vuejs-accessibility"],
+  extends: [
+    "@nuxtjs/eslint-config-typescript",
+    "plugin:prettier/recommended",
+    "plugin:vuejs-accessibility/recommended",
+  ],
   rules: {
     "comma-dangle": ["error", "always-multiline"],
     "no-console": "off",

@@ -1,5 +1,6 @@
 <template>
   <GenericFlair
+    site-name="GitHub"
     profile-name="Callum Watkins"
     profile-picture="/logos/CW_Logo.svg"
     :logo="GitHubLogo"
@@ -34,7 +35,7 @@
           </div>
         </div>
       </template>
-      <template v-else> Loading... </template>
+      <template v-else>Loading...</template>
     </template>
   </GenericFlair>
 </template>

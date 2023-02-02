@@ -6,6 +6,7 @@
         target="_blank"
         rel="noopener noreferrer me"
         :title="s.title"
+        :aria-label="s.title"
       >
         <FontAwesomeIcon :icon="s.icon" fixed-width />
       </NuxtLink>

@@ -20,7 +20,6 @@
         <NuxtLink href="#contact" class="button stroke smoothscroll"
           >Contact Me</NuxtLink
         >
-        <!--<a href="#" title="Download CV" class="button button-primary">Download CV</a>-->
       </div>
     </div>
   </section>

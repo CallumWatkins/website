@@ -21,9 +21,9 @@
               <h3>{{ e.level }}</h3>
               <p>{{ e.period }}</p>
             </div>
-            <div class="timeline-entry__content grade">
+            <div class="timeline-entry__content">
               <h4>{{ e.institution }}</h4>
-              <p>{{ e.grades.summary }}</p>
+              <p class="education__summary">{{ e.grades.summary }}</p>
               <div class="education__grades">
                 <template v-for="g in e.grades.grades">
                   <div>{{ g.grade }}</div>
@@ -154,28 +154,6 @@ import Work from "@/content/work.json";
               bottom: 0;
             }
           }
-
-          &.grade {
-            > p:first-of-type {
-              margin-bottom: 0;
-              font-weight: bold;
-            }
-
-            > ul {
-              margin-left: 0;
-
-              li {
-                list-style: none;
-                padding-left: 0;
-                line-height: 1.4;
-
-                span:first-of-type {
-                  display: inline-block;
-                  width: 3.5rem;
-                }
-              }
-            }
-          }
         }
       }
     }
@@ -191,6 +169,11 @@ import Work from "@/content/work.json";
 }
 
 .education {
+  &__summary {
+    margin-bottom: 0;
+    font-weight: bold;
+  }
+
   &__grades {
     display: grid;
     grid-template-columns: auto 1fr;

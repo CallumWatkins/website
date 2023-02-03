@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section class="resume">
     <div class="row section-intro">
       <div class="col-twelve">
         <h5>Résumé</h5>
@@ -74,6 +74,117 @@ import Work from "@/content/work.json";
 </script>
 
 <style lang="scss" scoped>
+.resume {
+  .resume-header {
+    text-align: center;
+    h2 {
+      color: var(--accent-primary);
+    }
+  }
+
+  .resume-timeline {
+    .timeline-wrap {
+      position: relative;
+      margin-top: 1.5rem;
+
+      &::before {
+        content: "";
+        display: block;
+        width: 1px;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.1);
+        position: absolute;
+        left: 35%;
+        top: 0;
+      }
+
+      .timeline-block {
+        position: relative;
+        padding-top: 1.5rem;
+
+        .timeline-ico {
+          height: 4.8rem;
+          width: 4.8rem;
+          background: var(--grey-81);
+          border-radius: 50%;
+          color: white;
+          position: absolute;
+          left: 35%;
+          top: 0.9rem;
+          margin-left: -2.4rem;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .timeline-header {
+          float: left;
+          width: 35%;
+          padding-right: 90px;
+          text-align: right;
+
+          h3 {
+            margin-bottom: 0;
+          }
+
+          p {
+            font-family: "poppins-regular", sans-serif;
+            font-size: 1.6rem;
+            color: var(--grey-60);
+          }
+        }
+      }
+    }
+
+    &:not(:last-child) .timeline-wrap {
+      margin-bottom: 6rem;
+    }
+  }
+}
+
+.resume .timeline-content {
+  margin-left: 35%;
+  padding-left: 60px;
+
+  h4 {
+    position: relative;
+    padding-bottom: 1.8rem;
+
+    &::after {
+      content: "";
+      display: block;
+      height: 3px;
+      width: 50px;
+      background: rgba(0, 0, 0, 0.2);
+      position: absolute;
+      left: 0;
+      bottom: 0;
+    }
+  }
+
+  &.grade {
+    > p:first-of-type {
+      margin-bottom: 0;
+      font-weight: bold;
+    }
+
+    > ul {
+      margin-left: 0;
+
+      li {
+        list-style: none;
+        padding-left: 0;
+        line-height: 1.4;
+
+        span:first-of-type {
+          display: inline-block;
+          width: 3.5rem;
+        }
+      }
+    }
+  }
+}
+
 .badge-collection {
   margin-bottom: 3rem;
 }
@@ -86,6 +197,101 @@ import Work from "@/content/work.json";
     column-gap: 0.5em;
     margin-bottom: 2rem;
     line-height: 2.5rem;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .resume {
+    .timeline-header {
+      padding-right: 50px;
+
+      h3 {
+        font-size: 1.8rem;
+      }
+
+      p {
+        font-size: 1.4rem;
+      }
+    }
+
+    .timeline-content {
+      padding-left: 50px;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .resume {
+    .timeline-wrap {
+      &::before {
+        left: 2.4rem;
+      }
+
+      .timeline-ico {
+        left: 2.4rem;
+      }
+
+      .timeline-header {
+        float: none;
+        width: auto;
+        padding-left: 7rem;
+        padding-right: 15px;
+        text-align: left;
+
+        h3 {
+          font-size: 2rem;
+        }
+
+        p {
+          font-size: 1.5rem;
+          margin-bottom: 1.5rem;
+        }
+      }
+
+      .timeline-content {
+        padding-left: 7rem;
+        margin: 0;
+
+        h4 {
+          padding-bottom: 0;
+          padding-top: 2.1rem;
+          margin-bottom: 0.6rem;
+          font-size: 1.7rem;
+
+          &::after {
+            bottom: auto;
+            top: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .resume {
+    .resume-header h2 {
+      font-size: 2.2rem;
+    }
+
+    .timeline-wrap {
+      &::before {
+        left: 1.8rem;
+      }
+
+      .timeline-ico {
+        height: 3.6rem;
+        width: 3.6rem;
+        left: 1.8rem;
+        margin-left: -1.8rem;
+        font-size: 1.5rem;
+      }
+
+      .timeline-header,
+      .timeline-content {
+        padding-left: 5.5rem;
+      }
+    }
   }
 }
 </style>

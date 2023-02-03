@@ -77,6 +77,7 @@ import Work from "@/content/work.json";
 .resume {
   .resume-header {
     text-align: center;
+
     h2 {
       color: var(--accent-primary);
     }
@@ -133,54 +134,54 @@ import Work from "@/content/work.json";
             color: var(--grey-60);
           }
         }
+
+        .timeline-content {
+          margin-left: 35%;
+          padding-left: 60px;
+
+          h4 {
+            position: relative;
+            padding-bottom: 1.8rem;
+
+            &::after {
+              content: "";
+              display: block;
+              height: 3px;
+              width: 50px;
+              background: rgba(0, 0, 0, 0.2);
+              position: absolute;
+              left: 0;
+              bottom: 0;
+            }
+          }
+
+          &.grade {
+            > p:first-of-type {
+              margin-bottom: 0;
+              font-weight: bold;
+            }
+
+            > ul {
+              margin-left: 0;
+
+              li {
+                list-style: none;
+                padding-left: 0;
+                line-height: 1.4;
+
+                span:first-of-type {
+                  display: inline-block;
+                  width: 3.5rem;
+                }
+              }
+            }
+          }
+        }
       }
     }
 
     &:not(:last-child) .timeline-wrap {
       margin-bottom: 6rem;
-    }
-  }
-}
-
-.resume .timeline-content {
-  margin-left: 35%;
-  padding-left: 60px;
-
-  h4 {
-    position: relative;
-    padding-bottom: 1.8rem;
-
-    &::after {
-      content: "";
-      display: block;
-      height: 3px;
-      width: 50px;
-      background: rgba(0, 0, 0, 0.2);
-      position: absolute;
-      left: 0;
-      bottom: 0;
-    }
-  }
-
-  &.grade {
-    > p:first-of-type {
-      margin-bottom: 0;
-      font-weight: bold;
-    }
-
-    > ul {
-      margin-left: 0;
-
-      li {
-        list-style: none;
-        padding-left: 0;
-        line-height: 1.4;
-
-        span:first-of-type {
-          display: inline-block;
-          width: 3.5rem;
-        }
-      }
     }
   }
 }
@@ -202,65 +203,75 @@ import Work from "@/content/work.json";
 
 @media only screen and (max-width: 1024px) {
   .resume {
-    .timeline-header {
-      padding-right: 50px;
+    .resume-timeline {
+      .timeline-wrap {
+        .timeline-block {
+          .timeline-header {
+            padding-right: 50px;
 
-      h3 {
-        font-size: 1.8rem;
+            h3 {
+              font-size: 1.8rem;
+            }
+
+            p {
+              font-size: 1.4rem;
+            }
+          }
+
+          .timeline-content {
+            padding-left: 50px;
+          }
+        }
       }
-
-      p {
-        font-size: 1.4rem;
-      }
-    }
-
-    .timeline-content {
-      padding-left: 50px;
     }
   }
 }
 
 @media only screen and (max-width: 768px) {
   .resume {
-    .timeline-wrap {
-      &::before {
-        left: 2.4rem;
-      }
-
-      .timeline-ico {
-        left: 2.4rem;
-      }
-
-      .timeline-header {
-        float: none;
-        width: auto;
-        padding-left: 7rem;
-        padding-right: 15px;
-        text-align: left;
-
-        h3 {
-          font-size: 2rem;
+    .resume-timeline {
+      .timeline-wrap {
+        &::before {
+          left: 2.4rem;
         }
 
-        p {
-          font-size: 1.5rem;
-          margin-bottom: 1.5rem;
-        }
-      }
+        .timeline-block {
+          .timeline-ico {
+            left: 2.4rem;
+          }
 
-      .timeline-content {
-        padding-left: 7rem;
-        margin: 0;
+          .timeline-header {
+            float: none;
+            width: auto;
+            padding-left: 7rem;
+            padding-right: 15px;
+            text-align: left;
 
-        h4 {
-          padding-bottom: 0;
-          padding-top: 2.1rem;
-          margin-bottom: 0.6rem;
-          font-size: 1.7rem;
+            h3 {
+              font-size: 2rem;
+            }
 
-          &::after {
-            bottom: auto;
-            top: 0;
+            p {
+              font-size: 1.5rem;
+              margin-bottom: 1.5rem;
+            }
+          }
+
+          .timeline-content {
+            padding-left: 7rem;
+            margin: 0;
+
+            h4 {
+              padding-bottom: 0;
+              padding-top: 2.1rem;
+              margin-bottom: 0.6rem;
+              font-size: 1.7rem;
+
+              &::after {
+                bottom: auto;
+                top: 0;
+              }
+            }
           }
         }
       }
@@ -274,22 +285,26 @@ import Work from "@/content/work.json";
       font-size: 2.2rem;
     }
 
-    .timeline-wrap {
-      &::before {
-        left: 1.8rem;
-      }
+    .resume-timeline {
+      .timeline-wrap {
+        &::before {
+          left: 1.8rem;
+        }
 
-      .timeline-ico {
-        height: 3.6rem;
-        width: 3.6rem;
-        left: 1.8rem;
-        margin-left: -1.8rem;
-        font-size: 1.5rem;
-      }
+        .timeline-block {
+          .timeline-ico {
+            height: 3.6rem;
+            width: 3.6rem;
+            left: 1.8rem;
+            margin-left: -1.8rem;
+            font-size: 1.5rem;
+          }
 
-      .timeline-header,
-      .timeline-content {
-        padding-left: 5.5rem;
+          .timeline-header,
+          .timeline-content {
+            padding-left: 5.5rem;
+          }
+        }
       }
     }
   }

@@ -685,32 +685,6 @@ section.dark-grey a:active {
 
 /** 
  * ===================================================================
- * 12.5. online - (_layout.scss)
- *
- * ------------------------------------------------------------------- 
- */
-
-#online .row.profiles > div {
-  text-align: center;
-}
-
-#online .row.profiles > div:not(:last-child) {
-  margin-bottom: 3rem;
-}
-
-#online .row.profiles > div > p {
-  margin-bottom: 2rem;
-  text-align: justify;
-}
-
-@media only screen and (max-width: 768px) {
-  #online .row.profiles > div {
-    text-align: justify;
-  }
-}
-
-/** 
- * ===================================================================
  * 17. contact - (_layout.scss)
  *
  * ------------------------------------------------------------------- 

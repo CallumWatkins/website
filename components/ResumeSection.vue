@@ -12,16 +12,16 @@
         <h2>Education</h2>
       </div>
       <div class="col-twelve">
-        <div class="timeline-wrap">
-          <div v-for="e in Education" class="timeline-block">
-            <div class="timeline-ico">
+        <div class="timeline">
+          <div v-for="e in Education" class="timeline-entry">
+            <div class="timeline-entry__icon">
               <FontAwesomeIcon :icon="e.icon" />
             </div>
-            <div class="timeline-header">
+            <div class="timeline-entry__header">
               <h3>{{ e.level }}</h3>
               <p>{{ e.period }}</p>
             </div>
-            <div class="timeline-content grade">
+            <div class="timeline-entry__content grade">
               <h4>{{ e.institution }}</h4>
               <p>{{ e.grades.summary }}</p>
               <div class="education__grades">
@@ -47,16 +47,16 @@
         <h2>Work Experience</h2>
       </div>
       <div class="col-twelve">
-        <div class="timeline-wrap">
-          <div v-for="w in Work" class="timeline-block">
-            <div class="timeline-ico">
+        <div class="timeline">
+          <div v-for="w in Work" class="timeline-entry">
+            <div class="timeline-entry__icon">
               <FontAwesomeIcon icon="fa-solid fa-briefcase" />
             </div>
-            <div class="timeline-header">
+            <div class="timeline-entry__header">
               <h3>{{ w.role }}</h3>
               <p>{{ w.period }}</p>
             </div>
-            <div class="timeline-content">
+            <div class="timeline-entry__content">
               <h4>{{ w.company }}</h4>
               <p v-for="d in w.description.split('\n')">{{ d }}</p>
               <BadgeCollection v-if="w.badges" :badges="w.badges" />
@@ -84,7 +84,7 @@ import Work from "@/content/work.json";
   }
 
   .resume-timeline {
-    .timeline-wrap {
+    .timeline {
       position: relative;
       margin-top: 1.5rem;
 
@@ -99,11 +99,11 @@ import Work from "@/content/work.json";
         top: 0;
       }
 
-      .timeline-block {
+      .timeline-entry {
         position: relative;
         padding-top: 1.5rem;
 
-        .timeline-ico {
+        &__icon {
           height: 4.8rem;
           width: 4.8rem;
           background: var(--grey-81);
@@ -118,7 +118,7 @@ import Work from "@/content/work.json";
           align-items: center;
         }
 
-        .timeline-header {
+        &__header {
           float: left;
           width: 35%;
           padding-right: 90px;
@@ -135,7 +135,7 @@ import Work from "@/content/work.json";
           }
         }
 
-        .timeline-content {
+        &__content {
           margin-left: 35%;
           padding-left: 60px;
 
@@ -180,7 +180,7 @@ import Work from "@/content/work.json";
       }
     }
 
-    &:not(:last-child) .timeline-wrap {
+    &:not(:last-child) .timeline {
       margin-bottom: 6rem;
     }
   }
@@ -204,9 +204,9 @@ import Work from "@/content/work.json";
 @media only screen and (max-width: 1024px) {
   .resume {
     .resume-timeline {
-      .timeline-wrap {
-        .timeline-block {
-          .timeline-header {
+      .timeline {
+        .timeline-entry {
+          &__header {
             padding-right: 50px;
 
             h3 {
@@ -218,7 +218,7 @@ import Work from "@/content/work.json";
             }
           }
 
-          .timeline-content {
+          &__content {
             padding-left: 50px;
           }
         }
@@ -230,17 +230,17 @@ import Work from "@/content/work.json";
 @media only screen and (max-width: 768px) {
   .resume {
     .resume-timeline {
-      .timeline-wrap {
+      .timeline {
         &::before {
           left: 2.4rem;
         }
 
-        .timeline-block {
-          .timeline-ico {
+        .timeline-entry {
+          &__icon {
             left: 2.4rem;
           }
 
-          .timeline-header {
+          &__header {
             float: none;
             width: auto;
             padding-left: 7rem;
@@ -257,7 +257,7 @@ import Work from "@/content/work.json";
             }
           }
 
-          .timeline-content {
+          &__content {
             padding-left: 7rem;
             margin: 0;
 
@@ -286,13 +286,13 @@ import Work from "@/content/work.json";
     }
 
     .resume-timeline {
-      .timeline-wrap {
+      .timeline {
         &::before {
           left: 1.8rem;
         }
 
-        .timeline-block {
-          .timeline-ico {
+        .timeline-entry {
+          &__icon {
             height: 3.6rem;
             width: 3.6rem;
             left: 1.8rem;
@@ -300,8 +300,8 @@ import Work from "@/content/work.json";
             font-size: 1.5rem;
           }
 
-          .timeline-header,
-          .timeline-content {
+          &__header,
+          &__content {
             padding-left: 5.5rem;
           }
         }

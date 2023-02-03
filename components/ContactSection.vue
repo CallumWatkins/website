@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section class="contact">
     <div class="row section-intro">
       <div class="col-twelve">
         <h5>Contact</h5>
@@ -37,3 +37,24 @@
     </div>
   </section>
 </template>
+
+<style lang="scss" scoped>
+.contact {
+  .contact-info {
+    font-family: "poppins-regular", sans-serif;
+    text-align: center;
+
+    a,
+    a:visited {
+      color: inherit;
+    }
+
+    a:hover,
+    a:focus,
+    a:active {
+      color: var(--grey-20);
+      outline: 0;
+    }
+  }
+}
+</style>

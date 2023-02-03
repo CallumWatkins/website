@@ -682,27 +682,3 @@ section.dark-grey a:active {
     font-size: 2.4rem;
   }
 }
-
-/** 
- * ===================================================================
- * 17. contact - (_layout.scss)
- *
- * ------------------------------------------------------------------- 
- */
-
-.contact-info {
-  font-family: "poppins-regular", sans-serif;
-  text-align: center;
-}
-
-section.dark-grey .contact-info a,
-section.dark-grey .contact-info a:visited {
-  color: inherit;
-}
-
-section.dark-grey .contact-info a:hover,
-section.dark-grey .contact-info a:focus,
-section.dark-grey .contact-info a:active {
-  color: var(--grey-20);
-  outline: 0;
-}

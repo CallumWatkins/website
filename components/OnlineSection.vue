@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section class="online">
     <div class="row section-intro">
       <div class="col-twelve">
         <h5>Online</h5>
@@ -34,14 +34,37 @@
 </template>
 
 <style lang="scss" scoped>
-.flair-container {
-  display: flex;
-  justify-content: center;
-  margin-top: 4rem;
+.online {
+  .row.profiles {
+    > div {
+      text-align: center;
 
-  @media screen and (max-width: 768px) {
-    margin-top: 2rem;
-    margin-bottom: 4rem;
+      &:not(:last-child) {
+        margin-bottom: 3rem;
+      }
+
+      > p {
+        margin-bottom: 2rem;
+        text-align: justify;
+      }
+
+      .flair-container {
+        display: flex;
+        justify-content: center;
+        margin-top: 4rem;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .online .row.profiles > div {
+    text-align: justify;
+
+    .flair-container {
+      margin-top: 2rem;
+      margin-bottom: 4rem;
+    }
   }
 }
 </style>

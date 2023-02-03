@@ -136,13 +136,7 @@ h2,
 h3,
 h4,
 h5,
-h6,
-.h01,
-.h02,
-.h03,
-.h04,
-.h05,
-.h06 {
+h6 {
   font-family: "poppins-semibold", sans-serif;
   color: var(--grey-81);
   font-style: normal;
@@ -151,16 +145,12 @@ h6,
 }
 
 h3,
-.h03,
-h4,
-.h04 {
+h4 {
   margin-bottom: 1.8rem;
 }
 
 h5,
-.h05,
-h6,
-.h06 {
+h6 {
   font-family: "poppins-bold";
   margin-bottom: 1.2rem;
 }
@@ -170,49 +160,42 @@ h5 {
   text-align: center;
 }
 
-h1,
-.h01 {
+h1 {
   font-size: 3.1rem;
   line-height: 1.355;
   letter-spacing: -0.1rem;
 }
 
 @media only screen and (max-width: 600px) {
-  h1,
-  .h01 {
+  h1 {
     font-size: 2.6rem;
     letter-spacing: -0.07rem;
   }
 }
 
-h2,
-.h02 {
+h2 {
   font-size: 2.4rem;
   line-height: 1.25;
 }
 
-h3,
-.h03 {
+h3 {
   font-size: 2rem;
   line-height: 1.5;
 }
 
-h4,
-.h04 {
+h4 {
   font-size: 1.7rem;
   line-height: 1.765;
 }
 
-h5,
-.h05 {
+h5 {
   font-size: 1.4rem;
   line-height: 1.714;
   text-transform: uppercase;
   letter-spacing: 0.15rem;
 }
 
-h6,
-.h06 {
+h6 {
   font-size: 1.3rem;
   line-height: 1.846;
   text-transform: uppercase;
@@ -258,49 +241,6 @@ b {
 small {
   font-size: 1.2rem;
   line-height: inherit;
-}
-
-blockquote {
-  margin: 3rem 0;
-  padding-left: 4rem;
-  position: relative;
-}
-
-blockquote:before {
-  content: "\201C";
-  font-size: 8rem;
-  line-height: 0px;
-  margin: 0;
-  color: var(--grey-81);
-  font-family: arial, sans-serif;
-  position: absolute;
-  top: 3rem;
-  left: 0;
-}
-
-blockquote p {
-  font-family: georgia, serif;
-  font-style: italic;
-  padding: 0;
-  font-size: 1.9rem;
-  line-height: 1.737;
-}
-
-blockquote cite {
-  display: block;
-  font-size: 1.3rem;
-  font-style: normal;
-  line-height: 1.616;
-}
-
-blockquote cite:before {
-  content: "\2014 \0020";
-}
-
-blockquote cite a,
-blockquote cite a:visited {
-  color: var(--grey-47);
-  border: none;
 }
 
 abbr {
@@ -444,48 +384,6 @@ dd {
 }
 
 /**
- * tables - (_document-setup.scss)  
- * -------------------------------------------------------------------
- */
-table {
-  border-width: 0;
-  width: 100%;
-  max-width: 100%;
-  font-family: "lora-regular", sans-serif;
-}
-
-th,
-td {
-  padding: 1.5rem 3rem;
-  text-align: left;
-  border-bottom: 1px solid var(--grey-9);
-}
-
-th {
-  color: var(--grey-81);
-  font-family: "poppins-bold", sans-serif;
-}
-
-td {
-  line-height: 1.5;
-}
-
-th:first-child,
-td:first-child {
-  padding-left: 0;
-}
-
-th:last-child,
-td:last-child {
-  padding-right: 0;
-}
-
-.table-responsive {
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
-}
-
-/**
  * Spacing - (_document-setup.scss)  
  * -------------------------------------------------------------------
  */
@@ -510,227 +408,16 @@ ul,
 ol,
 dl,
 form,
-.fluid-video-wrapper,
-.ss-custom-select {
+.fluid-video-wrapper {
   margin-bottom: 2rem;
-}
-
-.no-margin-bottom {
-  margin-bottom: 0;
-}
-
-/**
- * floated image - (_document-setup.scss)  
- * -------------------------------------------------------------------
- */
-img.pull-right {
-  margin: 0.9rem 0 0 2.4rem;
-}
-
-img.pull-left {
-  margin: 0.9rem 2.4rem 0 0;
-}
-
-/**
- * block grid paddings - (_document-setup.scss) 
- * -------------------------------------------------------------------
- */
-.bgrid {
-  padding: 0 20px;
-}
-
-@media only screen and (max-width: 1024px) {
-  .bgrid {
-    padding: 0 18px;
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  .bgrid {
-    padding: 0 15px;
-  }
-}
-
-@media only screen and (max-width: 600px) {
-  .bgrid {
-    padding: 0 10px;
-  }
-}
-
-@media only screen and (max-width: 400px) {
-  .bgrid {
-    padding: 0;
-  }
-}
-
-/** 
- * ===================================================================
- * 05. forms - (_forms.scss)
- *
- * ------------------------------------------------------------------- 
- */
-fieldset {
-  border: none;
-}
-
-input[type="email"],
-input[type="number"],
-input[type="search"],
-input[type="text"],
-input[type="tel"],
-input[type="url"],
-input[type="password"],
-textarea,
-select {
-  display: block;
-  height: 6rem;
-  padding: 1.5rem 0;
-  border: 0;
-  outline: none;
-  vertical-align: middle;
-  color: var(--grey-81);
-  font-family: "poppins-regular", sans-serif;
-  font-size: 1.5rem;
-  line-height: 3rem;
-  max-width: 100%;
-  background: transparent;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
-  transition-property: color, border-color;
-  transition-duration: 0.3s;
-  transition-timing-function: ease-in-out;
-}
-
-.ss-custom-select {
-  position: relative;
-  padding: 0;
-}
-
-.ss-custom-select select {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  -ms-appearance: none;
-  -o-appearance: none;
-  appearance: none;
-  text-indent: 0.01px;
-  text-overflow: "";
-  margin: 0;
-  line-height: 3rem;
-  vertical-align: middle;
-}
-
-.ss-custom-select select option {
-  padding-left: 2rem;
-  padding-right: 2rem;
-}
-
-.ss-custom-select select::-ms-expand {
-  display: none;
-}
-
-.ss-custom-select::after {
-  content: "\f0d7";
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  position: absolute;
-  top: 50%;
-  right: 1.5rem;
-  margin-top: -10px;
-  bottom: auto;
-  width: 20px;
-  height: 20px;
-  line-height: 20px;
-  font-size: 18px;
-  text-align: center;
-  pointer-events: none;
-  color: var(--grey-85);
-}
-
-textarea {
-  min-height: 25rem;
-}
-
-input[type="email"]:focus,
-input[type="number"]:focus,
-input[type="search"]:focus,
-input[type="text"]:focus,
-input[type="tel"]:focus,
-input[type="url"]:focus,
-input[type="password"]:focus,
-textarea:focus,
-select:focus {
-  color: var(--accent-secondary);
-  border-color: var(--accent-primary);
-}
-
-label,
-legend {
-  font-family: "poppins-bold", sans-serif;
-  font-size: 1.4rem;
-  margin-bottom: 0.6rem;
-  color: var(--grey-77);
-  display: block;
-}
-
-input[type="checkbox"],
-input[type="radio"] {
-  display: inline;
-}
-
-label > .label-text {
-  display: inline-block;
-  margin-left: 1rem;
-  font-family: "poppins-regular", sans-serif;
-  line-height: inherit;
-}
-
-label > input[type="checkbox"],
-label > input[type="radio"] {
-  margin: 0;
-  position: relative;
-  top: 0.15rem;
 }
 
 /**
  * Style Placeholder Text  
  * -
  */
-section.white ::-webkit-input-placeholder {
-  color: var(--grey-37);
-}
-
-section.white :-moz-placeholder {
-  color: var(--grey-37); /* Firefox 18- */
-}
-
-section.white ::-moz-placeholder {
-  color: var(--grey-37); /* Firefox 19+ */
-}
-
-section.white :-ms-input-placeholder {
-  color: var(--grey-37);
-}
 
 section.white ::placeholder {
-  color: var(--grey-37);
-}
-
-section.white .placeholder {
-  color: var(--grey-37) !important;
-}
-
-section.light-grey ::-webkit-input-placeholder {
-  color: var(--grey-37);
-}
-
-section.light-grey :-moz-placeholder {
-  color: var(--grey-37); /* Firefox 18- */
-}
-
-section.light-grey ::-moz-placeholder {
-  color: var(--grey-37); /* Firefox 19+ */
-}
-
-section.light-grey :-ms-input-placeholder {
   color: var(--grey-37);
 }
 
@@ -738,32 +425,8 @@ section.light-grey ::placeholder {
   color: var(--grey-37);
 }
 
-section.light-grey .placeholder {
-  color: var(--grey-37) !important;
-}
-
-section.dark-grey ::-webkit-input-placeholder {
-  color: var(--grey-57);
-}
-
-section.dark-grey :-moz-placeholder {
-  color: var(--grey-57); /* Firefox 18- */
-}
-
-section.dark-grey ::-moz-placeholder {
-  color: var(--grey-57); /* Firefox 19+ */
-}
-
-section.dark-grey :-ms-input-placeholder {
-  color: var(--grey-57);
-}
-
 section.dark-grey ::placeholder {
   color: var(--grey-57);
-}
-
-section.dark-grey .placeholder {
-  color: var(--grey-57) !important;
 }
 
 /** 
@@ -842,12 +505,6 @@ input[type="button"].button-primary:focus {
   border-color: var(--grey-88);
 }
 
-button.full-width,
-.button.full-width {
-  width: 100%;
-  margin-right: 0;
-}
-
 button.medium,
 .button.medium {
   height: 5.7rem !important;
@@ -889,74 +546,6 @@ button.stroke:focus-visible,
   border-color: var(--accent-secondary);
   color: var(--accent-secondary);
   outline: 2px solid var(--accent-secondary);
-}
-
-button::-moz-focus-inner,
-input::-moz-focus-inner {
-  border: 0;
-  padding: 0;
-}
-
-/** 
- * ===================================================================
- * 07. other components - (_others.scss)
- *
- * ------------------------------------------------------------------- 
- */
-
-/**
- * additional typo styles - (_additional-typo.scss)
- * -------------------------------------------------------------------
- */
-
-/**
- * line definition style
- */
-.lining dt,
-.lining dd {
-  display: inline;
-  margin: 0;
-}
-
-.lining dt + dt:before,
-.lining dd + dt:before {
-  content: "\A";
-  white-space: pre;
-}
-
-.lining dd + dd:before {
-  content: ", ";
-}
-
-.lining dd + dd:before {
-  content: ", ";
-}
-
-.lining dd:before {
-  content: ": ";
-  margin-left: -0.2em;
-}
-
-/**
- * dictionary definition style
- */
-.dictionary-style dt {
-  display: inline;
-  counter-reset: definitions;
-}
-
-.dictionary-style dt + dt:before {
-  content: ", ";
-  margin-left: -0.2em;
-}
-
-.dictionary-style dd {
-  display: block;
-  counter-increment: definitions;
-}
-
-.dictionary-style dd:before {
-  content: counter(definitions, decimal) ". ";
 }
 
 /** 
@@ -1058,7 +647,6 @@ section.dark-grey a:active {
 }
 
 .section-intro h5 {
-  /*color: var(--accent-primary);*/
   font-size: 1.8rem;
   line-height: 1.875;
   margin-bottom: 0.3rem;
@@ -1154,8 +742,6 @@ section.dark-grey a:active {
   display: table-cell;
   vertical-align: middle;
   text-align: center;
-  -webkit-transform: translateY(-2.1rem);
-  -ms-transform: translateY(-2.1rem);
   transform: translateY(-2.1rem);
 }
 

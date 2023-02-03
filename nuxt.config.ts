@@ -9,15 +9,11 @@ export default defineNuxtConfig({
       "@fortawesome/vue-fontawesome",
     ],
   },
-  css: ["@fortawesome/fontawesome-svg-core/styles.css"],
+  css: [
+    "@fortawesome/fontawesome-svg-core/styles.css",
+    "@/assets/css/_global.scss",
+  ],
   vite: {
-    css: {
-      preprocessorOptions: {
-        scss: {
-          additionalData: '@use "@/assets/css/_global.scss" as *;',
-        },
-      },
-    },
     esbuild: {
       drop: process.env.NODE_ENV === "production" ? ["console"] : undefined,
     },

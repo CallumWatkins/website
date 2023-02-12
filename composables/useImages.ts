@@ -1,25 +1,18 @@
-import { computed } from "#build/imports";
+// Import *all* images from /assets/images for dynamic use at runtime
+const images = import.meta.glob(
+  "@/assets/images/**/*.(png|jpg|jpeg|svg|avif|webp)",
+  { eager: true },
+);
 
-interface ImagesComposable {
-  getImageSrc: (fileName: string) => string;
-}
-
-export default function (): ImagesComposable {
-  const images = computed(() =>
-    import.meta.glob("@/assets/images/**/*.(png|jpg|jpeg|svg|avif|webp)", {
-      eager: true,
-    }),
-  );
-
+export default function () {
   const getImageSrc = (fileName: string): string => {
-    for (const path in images.value) {
-      if (Object.hasOwn(images.value, path)) {
-        if (path.endsWith(fileName)) {
-          return (images.value[path] as unknown as { default: string }).default;
-        }
+    for (const path in images) {
+      if (Object.hasOwn(images, path) && path.endsWith(fileName)) {
+        return (images[path] as unknown as { default: string }).default;
       }
     }
     throw new Error(`Image source not found: ${fileName}`);
   };
+
   return { getImageSrc };
 }

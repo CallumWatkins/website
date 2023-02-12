@@ -9,7 +9,7 @@
       "grades": [
         { "grade": "89%", "subject": "First year" },
         { "grade": "85%", "subject": "Second year" },
-        { "grade": "78%", "subject": "Third year" }
+        { "grade": "80%", "subject": "Third year" }
       ]
     },
     "icon": "fa-solid fa-graduation-cap",

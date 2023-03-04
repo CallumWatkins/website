@@ -1,7 +1,14 @@
 [
   {
+    "role": "Full Stack Engineer",
+    "period": "February 2023 – Present",
+    "company": "Carter Labs",
+    "description": "At Carter Labs, I am responsible for designing, building, testing, and ensuring the smooth functionality of systems that enable game studios to seamlessly integrate sophisticated AI NPCs into their projects. Through my work here, I am honing my skills in working effectively in a fast-paced development environment, allowing me to deliver high-quality results under tight deadlines.",
+    "badges": ["Nuxt", "TypeScript", "SCSS", "Python", "AWS"]
+  },
+  {
     "role": "Software Developer & Accounting Clerk",
-    "period": "July 2018 – Present",
+    "period": "July 2018 – February 2023",
     "company": "Accountancy Corporation in London",
     "description": "Working at this organisation has awarded me valuable experience in the use of computer systems in the industry. I have had the opportunity to develop software to optimise workflows, including ingesting and parsing bank statements, managing sensitive customer information, and updating critical internal databases with the most up-to-date knowledge.",
     "badges": ["Rust", "Vue.js", "Excel", "Netlify"]

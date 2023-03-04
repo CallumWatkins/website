@@ -51,6 +51,7 @@ const jsonLd = computed(() =>
         sameAs: "https://en.wikipedia.org/wiki/East_Barnet_School",
       },
     ],
+    jobTitle: "Full Stack Engineer",
     hasCredential: {
       "@type": "EducationalOccupationalCredential",
       name: "BSc Computer Science",
@@ -63,7 +64,7 @@ const jsonLd = computed(() =>
       },
     },
     disambiguatingDescription:
-      "Computer Science graduate and Software Developer in London.",
+      "Software Engineer and Computer Science graduate in London.",
     sameAs: [
       "https://keybase.io/CallumWatkins",
       "https://www.facebook.com/Watkins.Callum",
@@ -84,12 +85,12 @@ useHead({
     {
       name: "description",
       content:
-        "Computer Science graduate in London, lover of all things technology, security and science.",
+        "Software Engineer and Computer Science graduate in London, lover of all things technology, security and science.",
     },
     {
       name: "keywords",
       content:
-        "Callum Watkins,Software Developer,Programmer,Computer Science,Graduate,London",
+        "Callum Watkins,Software Engineer,Software Developer,Programmer,Computer Science,Graduate,London",
     },
     { property: "og:title", content: "Callum Watkins" },
     { property: "og:type", content: "profile" },
@@ -127,7 +128,7 @@ useHead({
     { property: "og:locale", content: "en_GB" },
     {
       property: "og:description",
-      content: "Computer Science graduate and Software Developer in London.",
+      content: "Software Engineer and Computer Science graduate in London.",
     },
     { property: "profile:first_name", content: "Callum" },
     { property: "profile:last_name", content: "Watkins" },

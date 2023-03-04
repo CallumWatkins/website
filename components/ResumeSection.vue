@@ -4,9 +4,33 @@
       <div class="col-twelve">
         <h5>Résumé</h5>
         <h1>More of my credentials.</h1>
-        <p class="lead">Explore my education and work experience.</p>
+        <p class="lead">Explore my work experience and education.</p>
       </div>
     </div>
+    <div class="row resume-timeline">
+      <div class="col-twelve resume-header">
+        <h2>Work Experience</h2>
+      </div>
+      <div class="col-twelve">
+        <div class="timeline">
+          <div v-for="w in Work" class="timeline-entry">
+            <div class="timeline-entry__icon">
+              <FontAwesomeIcon icon="fa-solid fa-briefcase" />
+            </div>
+            <div class="timeline-entry__header">
+              <h3>{{ w.role }}</h3>
+              <p>{{ w.period }}</p>
+            </div>
+            <div class="timeline-entry__content">
+              <h4>{{ w.company }}</h4>
+              <p v-for="d in w.description.split('\n')">{{ d }}</p>
+              <BadgeCollection v-if="w.badges" :badges="w.badges" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <div class="row resume-timeline">
       <div class="col-twelve resume-header">
         <h2>Education</h2>
@@ -36,30 +60,6 @@
                 </p>
               </template>
               <BadgeCollection v-if="e.badges" :badges="e.badges" />
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="row resume-timeline">
-      <div class="col-twelve resume-header">
-        <h2>Work Experience</h2>
-      </div>
-      <div class="col-twelve">
-        <div class="timeline">
-          <div v-for="w in Work" class="timeline-entry">
-            <div class="timeline-entry__icon">
-              <FontAwesomeIcon icon="fa-solid fa-briefcase" />
-            </div>
-            <div class="timeline-entry__header">
-              <h3>{{ w.role }}</h3>
-              <p>{{ w.period }}</p>
-            </div>
-            <div class="timeline-entry__content">
-              <h4>{{ w.company }}</h4>
-              <p v-for="d in w.description.split('\n')">{{ d }}</p>
-              <BadgeCollection v-if="w.badges" :badges="w.badges" />
             </div>
           </div>
         </div>

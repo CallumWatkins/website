@@ -51,6 +51,7 @@ const jsonLd = computed(() =>
         sameAs: "https://en.wikipedia.org/wiki/East_Barnet_School",
       },
     ],
+    jobTitle: "Full Stack Engineer",
     hasCredential: {
       "@type": "EducationalOccupationalCredential",
       name: "BSc Computer Science",

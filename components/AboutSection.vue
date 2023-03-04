@@ -7,10 +7,10 @@
         <div class="intro-info">
           <img src="/logos/CW_Logo.svg" alt="My profile picture." />
           <p class="lead">
-            I am a Computer Science graduate of King's College London, having
-            progressed my skills in a wide range of technologies and programming
-            languages. I have had a passion for developing software since I was
-            14 years old.
+            I am a Software Engineer working in London, having graduated from
+            King's College London with a First Class Honours degree in Computer
+            Science. I have had a passion for developing software since I was 14
+            years old.
           </p>
         </div>
       </div>

@@ -7,7 +7,7 @@
           <h5>Hello, World.</h5>
           <h1>I'm Callum Watkins.</h1>
           <p class="intro-position">
-            <span>Software Developer</span>
+            <span>Software Engineer</span>
             <span>BSc Computer Science</span>
           </p>
         </div>

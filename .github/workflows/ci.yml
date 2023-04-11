@@ -57,6 +57,7 @@ jobs:
         run: npm run typecheck
 
   deploy:
+    name: Deploy
     if: github.base_ref == 'master'
     needs: [eslint, typecheck]
     uses: ./.github/workflows/cd.yml

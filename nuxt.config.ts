@@ -13,6 +13,9 @@ export default defineNuxtConfig({
     "@fortawesome/fontawesome-svg-core/styles.css",
     "@/assets/css/_global.scss",
   ],
+  typescript: {
+    strict: true,
+  },
   vite: {
     esbuild: {
       drop: process.env.NODE_ENV === "production" ? ["console"] : undefined,

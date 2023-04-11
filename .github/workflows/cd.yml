@@ -3,13 +3,6 @@ on:
   push:
     branches: [master]
   workflow_call:
-    secrets:
-      CLOUDFLARE_API_TOKEN:
-        required: true
-      CLOUDFLARE_ACCOUNT_ID:
-        required: true
-      CLOUDFLARE_PROJECT_NAME:
-        required: true
 
 jobs:
   deploy:

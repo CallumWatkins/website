@@ -61,3 +61,4 @@ jobs:
     if: github.base_ref == 'master'
     needs: [eslint, typecheck]
     uses: ./.github/workflows/cd.yml
+    secrets: inherit

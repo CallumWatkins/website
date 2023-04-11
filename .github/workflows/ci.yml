@@ -3,7 +3,7 @@ on: pull_request
 
 jobs:
   eslint:
-    name: Lint
+    name: ESLint
     runs-on: ubuntu-latest
     permissions:
       contents: read

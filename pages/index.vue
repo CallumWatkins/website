@@ -1,14 +1,15 @@
+<!-- eslint-disable vue/no-multiple-template-root -->
 <template>
   <AppHeader
     :nav-items="navItems"
     :active-nav-item-id="currentScrolledSectionId"
   />
   <IntroSection id="intro" :ref="setSectionRef" />
-  <AboutSection id="about" class="white" :ref="setSectionRef" />
-  <ResumeSection id="resume" class="light-grey" :ref="setSectionRef" />
-  <OnlineSection id="online" class="white" :ref="setSectionRef" />
-  <ProjectsSection id="projects" class="light-grey" :ref="setSectionRef" />
-  <ContactSection id="contact" class="dark-grey" :ref="setSectionRef" />
+  <AboutSection id="about" :ref="setSectionRef" class="white" />
+  <ResumeSection id="resume" :ref="setSectionRef" class="light-grey" />
+  <OnlineSection id="online" :ref="setSectionRef" class="white" />
+  <ProjectsSection id="projects" :ref="setSectionRef" class="light-grey" />
+  <ContactSection id="contact" :ref="setSectionRef" class="dark-grey" />
 </template>
 
 <script setup lang="ts">
@@ -26,7 +27,7 @@ const navItems = ref([
 const baseUrl = useBaseUrl();
 
 const jsonLd = computed(() =>
-  JSON.stringify(<WithContext<Person>>{
+  JSON.stringify({
     "@context": "https://schema.org",
     "@type": "Person",
     name: "Callum Watkins",
@@ -75,7 +76,7 @@ const jsonLd = computed(() =>
       "https://gitlab.com/CallumWatkins",
       "https://t.me/CallumWatkins",
     ],
-  }),
+  } satisfies WithContext<Person>),
 );
 
 useHead({

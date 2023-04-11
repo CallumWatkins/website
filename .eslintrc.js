@@ -10,5 +10,6 @@ module.exports = {
     "comma-dangle": ["error", "always-multiline"],
     "no-console": "off",
     "vue/require-v-for-key": "off",
+    "prettier/prettier": ["error", { endOfLine: "auto" }],
   },
 };

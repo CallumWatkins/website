@@ -24,7 +24,7 @@
     "sass": "^1.62.1",
     "schema-dts": "^1.1.2",
     "typescript": "^5.0.4",
-    "vue-tsc": "^1.4.4"
+    "vue-tsc": "^1.8.3"
   },
   "dependencies": {
     "@fortawesome/free-brands-svg-icons": "^6.3.0",

@@ -27,56 +27,64 @@ const navItems = ref([
 const baseUrl = useBaseUrl();
 
 const jsonLd = computed(() =>
-  JSON.stringify({
-    "@context": "https://schema.org",
-    "@type": "Person",
-    name: "Callum Watkins",
-    givenName: "Callum",
-    familyName: "Watkins",
-    url: baseUrl.value,
-    email: "contact@callumwatkins.com",
-    gender: "Male",
-    nationality: {
-      "@type": "Country",
-      name: "United Kingdom",
+  JSON.stringify([
+    {
+      "@context": "http://schema.org",
+      "@type": "WebSite",
+      name: "Callum Watkins",
+      url: baseUrl.value,
     },
-    alumniOf: [
-      {
-        "@type": "CollegeOrUniversity",
-        name: "King's College London",
-        sameAs: "https://en.wikipedia.org/wiki/King's_College_London",
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      name: "Callum Watkins",
+      givenName: "Callum",
+      familyName: "Watkins",
+      url: baseUrl.value,
+      email: "contact@callumwatkins.com",
+      gender: "Male",
+      nationality: {
+        "@type": "Country",
+        name: "United Kingdom",
       },
-      {
-        "@type": "CollegeOrUniversity",
-        name: "East Barnet School",
-        sameAs: "https://en.wikipedia.org/wiki/East_Barnet_School",
+      alumniOf: [
+        {
+          "@type": "CollegeOrUniversity",
+          name: "King's College London",
+          sameAs: "https://en.wikipedia.org/wiki/King's_College_London",
+        },
+        {
+          "@type": "CollegeOrUniversity",
+          name: "East Barnet School",
+          sameAs: "https://en.wikipedia.org/wiki/East_Barnet_School",
+        },
+      ],
+      jobTitle: "Full Stack Engineer",
+      hasCredential: {
+        "@type": "EducationalOccupationalCredential",
+        name: "BSc Computer Science",
+        educationalLevel: "BSc",
+        credentialCategory: "degree",
+        recognizedBy: {
+          "@type": "CollegeOrUniversity",
+          name: "King's College London",
+          sameAs: "https://en.wikipedia.org/wiki/King's_College_London",
+        },
       },
-    ],
-    jobTitle: "Full Stack Engineer",
-    hasCredential: {
-      "@type": "EducationalOccupationalCredential",
-      name: "BSc Computer Science",
-      educationalLevel: "BSc",
-      credentialCategory: "degree",
-      recognizedBy: {
-        "@type": "CollegeOrUniversity",
-        name: "King's College London",
-        sameAs: "https://en.wikipedia.org/wiki/King's_College_London",
-      },
-    },
-    disambiguatingDescription:
-      "Software Engineer and Computer Science graduate in London.",
-    sameAs: [
-      "https://keybase.io/CallumWatkins",
-      "https://www.facebook.com/Watkins.Callum",
-      "https://twitter.com/CallumWatkins",
-      "https://www.linkedin.com/in/CallumWatkins",
-      "https://stackoverflow.com/users/4415734/callum-watkins",
-      "https://github.com/CallumWatkins",
-      "https://gitlab.com/CallumWatkins",
-      "https://t.me/CallumWatkins",
-    ],
-  } satisfies WithContext<Person>),
+      disambiguatingDescription:
+        "Software Engineer and Computer Science graduate in London.",
+      sameAs: [
+        "https://keybase.io/CallumWatkins",
+        "https://www.facebook.com/Watkins.Callum",
+        "https://twitter.com/CallumWatkins",
+        "https://www.linkedin.com/in/CallumWatkins",
+        "https://stackoverflow.com/users/4415734/callum-watkins",
+        "https://github.com/CallumWatkins",
+        "https://gitlab.com/CallumWatkins",
+        "https://t.me/CallumWatkins",
+      ],
+    } satisfies WithContext<Person>,
+  ]),
 );
 
 useHead({

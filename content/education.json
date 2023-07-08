@@ -13,7 +13,16 @@
       ]
     },
     "icon": "fa-solid fa-graduation-cap",
-    "badges": ["C++", "Java", "Scala", "JavaScript", "PHP", "SQL", "Docker"]
+    "badges": [
+      "C++",
+      "Java",
+      "Scala",
+      "JavaScript",
+      "PHP",
+      "SQL",
+      "Docker",
+      "Git"
+    ]
   },
   {
     "level": "GCE Advanced Level",

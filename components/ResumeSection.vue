@@ -126,6 +126,7 @@ import Work from "@/content/work.json";
 
           h3 {
             margin-bottom: 0;
+            text-wrap: balance;
           }
 
           p {

@@ -1,4 +1,4 @@
-import { Ref } from "vue";
+import type { Ref } from "vue";
 
 /** Detect which section of a page is currently within the viewport. */
 export default function (initialSectionId: string) {

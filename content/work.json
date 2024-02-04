@@ -3,8 +3,8 @@
     "role": "Full Stack Software Engineer",
     "period": "February 2023 – Present",
     "company": "Carter Labs",
-    "description": "At Carter Labs, I am responsible for designing, building, testing, and ensuring the smooth functionality of systems that provide sophisticated AI conversation and companionship to users and businesses worldwide. Through my work here, I am honing my skills in working effectively in a fast-paced development environment, delivering high-quality results under tight deadlines.",
-    "badges": ["Nuxt", "TypeScript", "SCSS", "Python", "AWS", "Git"]
+    "description": "At Carter Labs, I spearhead the creation of systems that provide sophisticated AI conversation and companionship to users worldwide. I am responsible for designing, engineering, testing, deploying, and maintaining these systems. In addition, I implement and continuously improve a suite of developer tooling, CI/CD pipelines, and monitoring solutions to streamline development processes and enhance the team’s capacity to deliver with confidence.\nMy work encompasses a broad spectrum of technologies to facilitate the end-to-end processing of user interactions. This includes leveraging AWS cloud infrastructure to architect scalable, resilient, and efficient systems, among which I develop a robust and idiomatic API that serves as the backbone for various client-facing and internal platforms.\nThrough my work here, I am honing my skills in working effectively in a fast-paced development environment, delivering high-quality results under tight deadlines.",
+    "badges": ["AWS", "MongoDB", "Python", "FastAPI", "Docker", "Nuxt", "TypeScript", "SCSS", "Git"]
   },
   {
     "role": "Software Developer & Accounting Clerk",

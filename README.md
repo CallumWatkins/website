@@ -6,7 +6,7 @@ Made with [Nuxt 3](https://nuxt.com/docs/getting-started/introduction).
 
 ### Build
 
-- Node.js 18.12
+- Node.js v18 (LTS)
 
 ### Dev
 
@@ -48,14 +48,7 @@ npm run preview
 
 ### Cloudflare Pages
 
-~~Changes to the master branch are published automatically via [Cloudflare Pages](https://pages.cloudflare.com/). Pull requests to the master branch from this repository will automatically generate a preview deployment.~~
-
-Currently, due to CallumWatkins/website#4, builds must be published manually with wrangler:
-
-```bash
-npm run generate
-npx wrangler pages deployment create .\.output\public\ --project-name callumwatkins
-```
+Changes to the master branch are published automatically via [Cloudflare Pages](https://pages.cloudflare.com/). Pull requests to the master branch will automatically generate a preview deployment.
 
 [[Nuxt deployment documentation](https://nuxt.com/docs/getting-started/deployment)]
 [[Nitro Cloudflare Pages preset](https://nitro.unjs.io/deploy/providers/cloudflare#cloudflare-pages)].

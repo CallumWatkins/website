@@ -6,7 +6,7 @@ Made with [Nuxt 3](https://nuxt.com/docs/getting-started/introduction).
 
 ### Build
 
-- Node.js v18 (LTS)
+- Node.js v20 (LTS)
 
 ### Dev
 

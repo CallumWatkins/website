@@ -21,7 +21,7 @@
     "eslint-plugin-vuejs-accessibility": "^2.1.0",
     "nuxt": "^3.10.3",
     "prettier": "^3.2.5",
-    "sass": "^1.71.1",
+    "sass": "^1.72.0",
     "schema-dts": "^1.1.2",
     "typescript": "^5.4.2",
     "vue-tsc": "^2.0.6"

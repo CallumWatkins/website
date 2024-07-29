@@ -32,7 +32,7 @@
     "@fortawesome/free-solid-svg-icons": "^6.6.0",
     "@fortawesome/fontawesome-svg-core": "^6.6.0",
     "@fortawesome/vue-fontawesome": "^3.0.8",
-    "swiper": "^11.1.6"
+    "swiper": "^11.1.8"
   },
   "overrides": {
     "@parcel/watcher": "2.1.0"

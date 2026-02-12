@@ -143,7 +143,7 @@ useHead({
     { property: "profile:last_name", content: "Watkins" },
     { property: "profile:gender", content: "male" },
   ],
-  script: [{ type: "application/ld+json", children: jsonLd }],
+  script: [{ type: "application/ld+json", textContent: jsonLd }],
 });
 
 const { setSectionRef, currentScrolledSectionId } =

@@ -55,8 +55,9 @@ a:hover {
 
   &__grid {
     color: white;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI Adjusted",
-      "Segoe UI", "Liberation Sans", sans-serif;
+    font-family:
+      -apple-system, BlinkMacSystemFont, "Segoe UI Adjusted", "Segoe UI",
+      "Liberation Sans", sans-serif;
     width: 32rem;
     height: 6rem;
     display: grid;

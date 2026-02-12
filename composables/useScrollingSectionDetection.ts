@@ -1,4 +1,4 @@
-import type { Ref } from "vue";
+import type { ComponentPublicInstance, Ref } from "vue";
 
 /** Detect which section of a page is currently within the viewport. */
 export default function (initialSectionId: string) {
@@ -6,9 +6,20 @@ export default function (initialSectionId: string) {
 
   const currentScrolledSectionId = ref(initialSectionId);
 
-  function setSectionRef(element: any) {
-    if (element && !sections.value.includes(element.$el)) {
-      sections.value.push(element.$el);
+  function setSectionRef(element: Element | ComponentPublicInstance | null) {
+    if (!element) return;
+
+    const sectionElement =
+      element instanceof Element
+        ? element
+        : element.$el instanceof Element
+          ? element.$el
+          : null;
+
+    if (sectionElement instanceof HTMLElement) {
+      if (!sections.value.includes(sectionElement)) {
+        sections.value.push(sectionElement);
+      }
     }
   }
 

@@ -19,14 +19,16 @@
 </template>
 
 <script setup lang="ts">
+import type { NuxtError } from "#app";
+
 const props = defineProps<{
-  error: any;
+  error: NuxtError;
 }>();
 
 useHead({
   titleTemplate: "%s | Callum Watkins",
   title: computed(() => {
-    if (props.error.statusCode === "404") return `Page Not Found`;
+    if (props.error.statusCode === 404) return `Page Not Found`;
     else if (props.error.statusCode) return `Error ${props.error.statusCode}`;
     else return "Error";
   }),

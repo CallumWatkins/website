@@ -27,7 +27,7 @@
     "sass": "^1.97.3",
     "schema-dts": "^1.1.5",
     "typescript": "^5.9.3",
-    "vue-tsc": "^2.2.12"
+    "vue-tsc": "^3.2.4"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^7.2.0",

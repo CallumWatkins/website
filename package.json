@@ -19,7 +19,7 @@
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
     "lint": "eslint .",
-    "typecheck": "nuxt typecheck",
+    "typecheck": "nuxt typecheck && tsc -p functions --noEmit",
     "prettier:check": "prettier --check .",
     "prettier:write": "prettier --write ."
   },

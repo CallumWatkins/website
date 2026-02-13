@@ -6,6 +6,13 @@ export default withNuxt(
   {
     ignores: ["functions/worker-configuration.d.ts"],
   },
+  {
+    name: "project/nuxt-entrypoint-overrides",
+    files: ["app/error.vue", "app/pages/index.vue"],
+    rules: {
+      "vue/multi-word-component-names": "off",
+    },
+  },
   ...pluginVueA11y.configs["flat/recommended"],
   {
     name: "project/custom-rules",

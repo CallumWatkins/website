@@ -69,8 +69,8 @@
 </template>
 
 <script setup lang="ts">
-import Education from "@/content/education.json";
-import Work from "@/content/work.json";
+import Education from "~~/content/education.json";
+import Work from "~~/content/work.json";
 </script>
 
 <style lang="scss" scoped>

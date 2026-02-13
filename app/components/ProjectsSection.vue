@@ -51,7 +51,7 @@
 <script setup lang="ts">
 import { A11y, Scrollbar } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/vue";
-import Projects from "@/content/projects.json";
+import Projects from "~~/content/projects.json";
 import "swiper/css";
 import "swiper/css/scrollbar";
 

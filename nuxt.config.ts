@@ -1,9 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   modules: ["@nuxt/eslint"],
-  eslint: {
-    checker: true,
-  },
   build: {
     transpile: [
       "@fortawesome/fontawesome-svg-core",

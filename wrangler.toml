@@ -1,0 +1,12 @@
+# IMPORTANT: Run `npx wrangler types functions/worker-configuration.d.ts` after modifying this file.
+
+"$schema" = "./node_modules/wrangler/config-schema.json"
+name = "callumwatkins"
+pages_build_output_dir = ".output/public"
+compatibility_date = "2026-02-13"
+
+[vars]
+APP_ENV = "preview"
+
+[env.production.vars]
+APP_ENV = "production"

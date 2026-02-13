@@ -2,3 +2,4 @@
 /.output/
 /.vscode/
 /dist
+/functions/worker-configuration.d.ts

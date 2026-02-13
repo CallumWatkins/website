@@ -1,14 +1,14 @@
 <template>
   <div class="container">
     <section>
-      <template v-if="error.statusCode !== undefined">
+      <template v-if="error.status !== undefined">
         <h2>Darn, it's a</h2>
-        <h1>{{ error.statusCode }}</h1>
+        <h1>{{ error.status }}</h1>
       </template>
       <template v-else>
         <h2>An error occurred</h2>
       </template>
-      <p v-if="error.statusMessage">{{ error.statusMessage }}</p>
+      <p v-if="error.statusText">{{ error.statusText }}</p>
       <p v-else-if="error.message">{{ error.message }}</p>
       <NuxtLink href="/"
         ><FontAwesomeIcon icon="fa-solid fa-arrow-left" /> Back Home</NuxtLink
@@ -19,15 +19,17 @@
 </template>
 
 <script setup lang="ts">
+import type { NuxtError } from "#app";
+
 const props = defineProps<{
-  error: any;
+  error: NuxtError;
 }>();
 
 useHead({
   titleTemplate: "%s | Callum Watkins",
   title: computed(() => {
-    if (props.error.statusCode === "404") return `Page Not Found`;
-    else if (props.error.statusCode) return `Error ${props.error.statusCode}`;
+    if (props.error.status === 404) return `Page Not Found`;
+    else if (props.error.status) return `Error ${props.error.status}`;
     else return "Error";
   }),
 });

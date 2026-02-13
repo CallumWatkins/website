@@ -15,5 +15,5 @@
 </template>
 
 <script setup lang="ts">
-import Social from "@/content/social.json";
+import Social from "~~/content/social.json";
 </script>

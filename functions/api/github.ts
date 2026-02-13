@@ -1,8 +1,3 @@
-interface Env {
-  KV: KVNamespace;
-  GITHUB_TOKEN: string;
-}
-
 export const onRequestGet: PagesFunction<Env> = async (context) => {
   if (!context.env.GITHUB_TOKEN) throw new Error("GITHUB_TOKEN missing");
 

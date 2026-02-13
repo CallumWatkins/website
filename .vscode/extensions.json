@@ -3,6 +3,7 @@
         "editorconfig.editorconfig",
         "vue.volar",
         "esbenp.prettier-vscode",
-        "dbaeumer.vscode-eslint"
+        "dbaeumer.vscode-eslint",
+        "tamasfe.even-better-toml"
     ]
 }

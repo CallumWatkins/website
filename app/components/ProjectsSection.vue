@@ -51,9 +51,9 @@
 <script setup lang="ts">
 import { A11y, Scrollbar } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/vue";
-import Projects from "@/content/projects.json";
-import "swiper/scss";
-import "swiper/scss/scrollbar";
+import Projects from "~~/content/projects.json";
+import "swiper/css";
+import "swiper/css/scrollbar";
 
 const swiperModules = [A11y, Scrollbar];
 const { getImageSrc } = useImages();

@@ -14,7 +14,7 @@
               :title="`${user.reputation.toLocaleString()} reputation`"
               aria-hidden="true"
             >
-              <FontAwesomeIcon icon="fa-solid fa-star" size="2xs" />
+              <FontAwesomeIcon icon="fa-solid fa-star" size="2xs" width-auto />
               {{ user.reputation.toLocaleString() }}
             </span>
             <span class="sr-only"
@@ -26,7 +26,11 @@
               class="gold"
               :title="`${user.badge_counts.gold} gold badges`"
               aria-hidden="true"
-              ><FontAwesomeIcon icon="fa-solid fa-circle" size="2xs" />
+              ><FontAwesomeIcon
+                icon="fa-solid fa-circle"
+                size="2xs"
+                width-auto
+              />
               {{ user.badge_counts.gold }}</span
             >
             <span class="sr-only"
@@ -36,7 +40,11 @@
               class="silver"
               :title="`${user.badge_counts.silver} silver badges`"
               aria-hidden="true"
-              ><FontAwesomeIcon icon="fa-solid fa-circle" size="2xs" />
+              ><FontAwesomeIcon
+                icon="fa-solid fa-circle"
+                size="2xs"
+                width-auto
+              />
               {{ user.badge_counts.silver }}</span
             >
             <span class="sr-only"
@@ -46,7 +54,11 @@
               class="bronze"
               :title="`${user.badge_counts.bronze} bronze badges`"
               aria-hidden="true"
-              ><FontAwesomeIcon icon="fa-solid fa-circle" size="2xs" />
+              ><FontAwesomeIcon
+                icon="fa-solid fa-circle"
+                size="2xs"
+                width-auto
+              />
               {{ user.badge_counts.bronze }}</span
             >
             <span class="sr-only"

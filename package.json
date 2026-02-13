@@ -3,6 +3,15 @@
   "engines": {
     "node": "24.x"
   },
+  "devEngines": {
+    "runtime": {
+      "name": "node",
+      "version": "24.x"
+    },
+    "packageManager": {
+      "name": "npm"
+    }
+  },
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",

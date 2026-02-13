@@ -3,6 +3,9 @@ import eslintConfigPrettier from "eslint-config-prettier";
 import pluginVueA11y from "eslint-plugin-vuejs-accessibility";
 
 export default withNuxt(
+  {
+    ignores: ["functions/worker-configuration.d.ts"],
+  },
   ...pluginVueA11y.configs["flat/recommended"],
   {
     name: "project/custom-rules",

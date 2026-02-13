@@ -1,20 +1,11 @@
 # Callum Watkins Website
 
-Made with [Nuxt 4](https://nuxt.com/docs/4.x/getting-started/introduction).
+Made with [Nuxt 4](https://nuxt.com/docs/4.x/).
 
 ## Prerequisites
 
-### Build
-
 - Node.js v24 (LTS)
-
-### Dev
-
-- Visual Studio Code
-- 'Vue Language Features (Volar)' extension + Takeover Mode
-- 'EditorConfig for VS Code' extension
-- 'ESLint' extension
-- 'Prettier - Code formatter' extension
+- npm
 
 ## Setup
 
@@ -32,23 +23,8 @@ Start the development server on http://localhost:3000:
 npm run dev
 ```
 
-## Production
+### Deployment to Cloudflare Pages
 
-Build the application for production:
+Deployment to [Cloudflare Pages](https://pages.cloudflare.com) is handled by GitHub Actions. All routes are pre-rendered using [Nuxt static site generation (SSG)](https://nuxt.com/docs/4.x/getting-started/deployment#static-hosting).
 
-```bash
-npm run build
-```
-
-Locally preview a production build:
-
-```bash
-npm run preview
-```
-
-### Cloudflare Pages
-
-Changes to the master branch are published automatically via [Cloudflare Pages](https://pages.cloudflare.com/). Pull requests to the master branch will automatically generate a preview deployment.
-
-[[Nuxt deployment documentation](https://nuxt.com/docs/getting-started/deployment)]
-[[Nitro Cloudflare Pages preset](https://nitro.unjs.io/deploy/providers/cloudflare#cloudflare-pages)].
+Changes to the master branch are published automatically. Pull requests to the master branch will automatically generate a preview deployment after passing CI checks.

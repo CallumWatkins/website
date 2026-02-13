@@ -16,6 +16,7 @@ jobs:
     permissions:
       contents: read
       pull-requests: write
+      deployments: write
     steps:
       - name: Comment deploy start
         if: github.event_name == 'pull_request'
@@ -46,12 +47,15 @@ jobs:
 
       - name: Publish to Cloudflare Pages
         id: cf-pages-publish
-        uses: cloudflare/pages-action@v1
+        uses: cloudflare/wrangler-action@v3
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          projectName: ${{ secrets.CLOUDFLARE_PROJECT_NAME }}
-          directory: .output/public
+          command: >
+            pages deploy .output/public
+            --project-name=${{ secrets.CLOUDFLARE_PROJECT_NAME }}
+            --branch=${{ github.head_ref || github.ref_name }}
+          gitHubToken: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Comment deploy URL
         if: github.event_name == 'pull_request'
@@ -65,5 +69,6 @@ jobs:
             | :-- | :-- |
             |<span aria-hidden="true">🔨</span> Latest commit | ${{ github.sha }} |
             |<span aria-hidden="true">🔍</span> Latest deploy log | ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }} |
-            |<span aria-hidden="true">😎</span> Deploy Preview URL | [${{ steps.cf-pages-publish.outputs.url }}](${{ steps.cf-pages-publish.outputs.url }}) |
-            |<span aria-hidden="true">🌳</span> Environment | ${{ steps.cf-pages-publish.outputs.environment }} |
+            |<span aria-hidden="true">😎</span> Deploy Preview URL | [${{ steps.cf-pages-publish.outputs.pages-deployment-alias-url }}](${{ steps.cf-pages-publish.outputs.pages-deployment-alias-url }}) |
+            |<span aria-hidden="true">📦</span> Deployment ID | ${{ steps.cf-pages-publish.outputs.pages-deployment-id }} |
+            |<span aria-hidden="true">🌳</span> Environment | ${{ steps.cf-pages-publish.outputs.pages-environment }} |

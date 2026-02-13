@@ -1,6 +1,6 @@
 # Callum Watkins Website
 
-Made with [Nuxt 3](https://nuxt.com/docs/getting-started/introduction).
+Made with [Nuxt 4](https://nuxt.com/docs/4.x/getting-started/introduction).
 
 ## Prerequisites
 

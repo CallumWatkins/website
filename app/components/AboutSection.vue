@@ -6,12 +6,9 @@
         <h1>Let me introduce myself.</h1>
         <div class="intro-info">
           <img src="/logos/CW_Logo.svg" alt="My profile picture." />
-          <p class="lead">
-            I am a Software Engineer working in London, having graduated from
-            King's College London with a First Class Honours degree in Computer
-            Science. I have had a passion for developing software since I was 14
-            years old.
-          </p>
+          <div>
+            <p v-for="p in About.text.split('\n')" class="lead">{{ p }}</p>
+          </div>
         </div>
       </div>
     </div>
@@ -24,6 +21,10 @@
     </div>
   </section>
 </template>
+
+<script setup lang="ts">
+import About from "~~/content/about.json";
+</script>
 
 <style lang="scss" scoped>
 .about {

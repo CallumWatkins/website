@@ -1,0 +1,12 @@
+{
+  "stackoverflow": {
+    "title": "Stack Overflow",
+    "description": "I am a member of the Stack Overflow Q&A community, contributing questions and answers to the wide community of professional and enthusiast programmers.",
+    "url": "https://stackoverflow.com/users/4415734/callum-watkins"
+  },
+  "github": {
+    "title": "GitHub & Gist",
+    "description": "GitHub hosts my public code resositories and Gists. Gists are a handy way of sharing code; there's everything from snippets to whole projects, available for public use.",
+    "url": "https://github.com/CallumWatkins"
+  }
+}

@@ -4,7 +4,7 @@
     profile-name="Callum Watkins"
     profile-picture="/logos/CW_Logo.svg"
     :logo="StackOverflowLogo"
-    href="https://stackoverflow.com/users/4415734/callum-watkins"
+    :href="Online.stackoverflow.url"
   >
     <template #details>
       <template v-if="user">
@@ -90,6 +90,7 @@
 
 <script setup lang="ts">
 import StackOverflowLogo from "@/assets/images/stack-overflow.svg";
+import Online from "~~/content/online.json";
 
 interface SOUserBadgeCounts {
   bronze: number;

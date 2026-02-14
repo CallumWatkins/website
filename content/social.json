@@ -1,23 +1,8 @@
 [
   {
-    "url": "mailto:contact@callumwatkins.com",
-    "title": "Email me",
-    "icon": "fa-regular fa-envelope"
-  },
-  {
-    "url": "https://t.me/CallumWatkins",
-    "title": "Message me on Telegram",
-    "icon": "fa-brands fa-telegram"
-  },
-  {
-    "url": "https://keybase.io/CallumWatkins",
-    "title": "Message me securely using Keybase",
-    "icon": "fa-brands fa-keybase"
-  },
-  {
-    "url": "https://twitter.com/CallumWatkins",
-    "title": "Find me on Twitter",
-    "icon": "fa-brands fa-twitter"
+    "url": "https://www.linkedin.com/in/CallumWatkins",
+    "title": "Find my professional profile on LinkedIn",
+    "icon": "fa-brands fa-linkedin-in"
   },
   {
     "url": "https://github.com/CallumWatkins",
@@ -30,9 +15,24 @@
     "icon": "fa-brands fa-stack-overflow"
   },
   {
-    "url": "https://www.linkedin.com/in/CallumWatkins",
-    "title": "Find my professional profile on LinkedIn",
-    "icon": "fa-brands fa-linkedin-in"
+    "url": "mailto:contact@callumwatkins.com",
+    "title": "Email me",
+    "icon": "fa-regular fa-envelope"
+  },
+  {
+    "url": "https://keybase.io/CallumWatkins",
+    "title": "Message me securely using Keybase",
+    "icon": "fa-brands fa-keybase"
+  },
+  {
+    "url": "https://twitter.com/CallumWatkins",
+    "title": "Find me on Twitter",
+    "icon": "fa-brands fa-twitter"
+  },
+  {
+    "url": "https://t.me/CallumWatkins",
+    "title": "Message me on Telegram",
+    "icon": "fa-brands fa-telegram"
   },
   {
     "url": "https://www.paypal.me/CallumWatkins",

@@ -1,40 +1,48 @@
 [
   {
+    "name": "LinkedIn",
     "url": "https://www.linkedin.com/in/CallumWatkins",
     "title": "Find my professional profile on LinkedIn",
     "icon": "fa-brands fa-linkedin-in"
   },
   {
+    "name": "GitHub",
     "url": "https://github.com/CallumWatkins",
     "title": "Find my code repositories and contributions on GitHub",
     "icon": "fa-brands fa-github"
   },
   {
+    "name": "Stack Overflow",
     "url": "https://stackoverflow.com/users/4415734/callum-watkins",
     "title": "Find my Q&A contributions on Stack Overflow",
     "icon": "fa-brands fa-stack-overflow"
   },
   {
+    "name": "Email",
     "url": "mailto:contact@callumwatkins.com",
     "title": "Email me",
     "icon": "fa-regular fa-envelope"
   },
   {
+    "name": "Keybase",
     "url": "https://keybase.io/CallumWatkins",
     "title": "Message me securely using Keybase",
     "icon": "fa-brands fa-keybase"
   },
   {
+    "name": "Twitter",
     "url": "https://twitter.com/CallumWatkins",
     "title": "Find me on Twitter",
     "icon": "fa-brands fa-twitter"
   },
   {
+    "name": "Telegram",
     "url": "https://t.me/CallumWatkins",
     "title": "Message me on Telegram",
     "icon": "fa-brands fa-telegram"
   },
   {
+    "name": "PayPal",
     "url": "https://www.paypal.me/CallumWatkins",
     "title": "Send money with PayPal",
     "icon": "fa-brands fa-paypal"

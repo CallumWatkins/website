@@ -15,6 +15,11 @@ export default defineNuxtConfig({
     "@fortawesome/fontawesome-svg-core/styles.css",
     "@/assets/css/_global.scss",
   ],
+  nitro: {
+    prerender: {
+      routes: ["/llms.txt", "/llms-full.txt"],
+    },
+  },
   typescript: {
     strict: true,
   },

@@ -12,6 +12,9 @@
 /llms-full.txt
   Content-Type: text/markdown; charset=UTF-8
 
+/index.html.md
+  Content-Type: text/markdown; charset=UTF-8
+
 https://:project.pages.dev/*
   X-Robots-Tag: noindex
 

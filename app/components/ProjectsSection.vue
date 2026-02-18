@@ -19,9 +19,7 @@
             <div class="project-card">
               <div class="project-card__image">
                 <ImageSources
-                  :sources="
-                    p.images.map((img) => getImageSrc(`projects/${img}`))
-                  "
+                  :sources="p.images.map((img) => `/images/projects/${img}`)"
                   alt=""
                 />
               </div>
@@ -56,7 +54,6 @@ import "swiper/css";
 import "swiper/css/scrollbar";
 
 const swiperModules = [A11y, Scrollbar];
-const { getImageSrc } = useImages();
 </script>
 
 <style lang="scss" scoped>

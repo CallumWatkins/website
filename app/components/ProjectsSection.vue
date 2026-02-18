@@ -3,7 +3,7 @@
     <div class="row section-intro">
       <div class="col-twelve">
         <h5>Projects</h5>
-        <h1>What I've been working on.</h1>
+        <h1>What I’ve been working on.</h1>
         <p class="lead">Take a look at examples of my work.</p>
       </div>
     </div>

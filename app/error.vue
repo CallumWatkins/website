@@ -2,7 +2,7 @@
   <div class="container">
     <section>
       <template v-if="error.status !== undefined">
-        <h2>Darn, it's a</h2>
+        <h2>Darn, it’s a</h2>
         <h1>{{ error.status }}</h1>
       </template>
       <template v-else>

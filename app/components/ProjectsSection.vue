@@ -3,7 +3,7 @@
     <div class="row section-intro">
       <div class="col-twelve">
         <h5>Projects</h5>
-        <h1>What I've been working on.</h1>
+        <h1>What I’ve been working on.</h1>
         <p class="lead">Take a look at examples of my work.</p>
       </div>
     </div>
@@ -19,9 +19,7 @@
             <div class="project-card">
               <div class="project-card__image">
                 <ImageSources
-                  :sources="
-                    p.images.map((img) => getImageSrc(`projects/${img}`))
-                  "
+                  :sources="p.images.map((img) => `/images/projects/${img}`)"
                   alt=""
                 />
               </div>
@@ -56,7 +54,6 @@ import "swiper/css";
 import "swiper/css/scrollbar";
 
 const swiperModules = [A11y, Scrollbar];
-const { getImageSrc } = useImages();
 </script>
 
 <style lang="scss" scoped>

@@ -3,7 +3,7 @@
     <div class="row section-intro">
       <div class="col-twelve">
         <h5>Contact</h5>
-        <h1>I'd Love To Hear From You.</h1>
+        <h1>I’d Love To Hear From You.</h1>
         <p class="lead">
           You can get in touch by emailing me directly.<br />To encrypt your
           message first, use

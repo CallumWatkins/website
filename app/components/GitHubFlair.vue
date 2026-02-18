@@ -4,7 +4,7 @@
     profile-name="Callum Watkins"
     profile-picture="/logos/CW_Logo.svg"
     :logo="GitHubLogo"
-    href="https://github.com/CallumWatkins"
+    :href="Online.github.url"
   >
     <template #details>
       <template v-if="data">
@@ -42,6 +42,7 @@
 
 <script setup lang="ts">
 import GitHubLogo from "@/assets/images/github-mark-white.svg";
+import Online from "~~/content/online.json";
 
 interface GHContributionCalendar {
   totalContributions: number;

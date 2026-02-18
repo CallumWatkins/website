@@ -30,7 +30,7 @@
     }
   },
   {
-    "title": "King's College Hospital Paediatric Liver Service Website",
+    "title": "King’s College Hospital Paediatric Liver Service Website",
     "description": "Coordinated with nurses at KCH to design and develop a web application to educate parents about liver conditions affecting their children.",
     "images": ["kch-pls.avif", "kch-pls.png"],
     "badges": ["Vue", "Java", "SQL", "Netlify"],
@@ -116,7 +116,7 @@
   },
   {
     "title": "Dynamic DNS Updater",
-    "description": "A simple and robust tool for keeping DNS records on both Cloudflare and Namecheap dynamically updated with the host's public IP address.",
+    "description": "A simple and robust tool for keeping DNS records on both Cloudflare and Namecheap dynamically updated with the host’s public IP address.",
     "images": ["ddns-updater.avif", "ddns-updater.png"],
     "badges": ["C#", ".NET", "CLI", "Docker"],
     "link": {

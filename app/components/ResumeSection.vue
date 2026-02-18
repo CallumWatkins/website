@@ -13,20 +13,22 @@
       </div>
       <div class="col-twelve">
         <div class="timeline">
-          <div v-for="w in Work" class="timeline-entry">
-            <div class="timeline-entry__icon">
-              <FontAwesomeIcon icon="fa-solid fa-briefcase" />
+          <template v-for="w in Work">
+            <div v-if="!w.hide" class="timeline-entry">
+              <div class="timeline-entry__icon">
+                <FontAwesomeIcon icon="fa-solid fa-briefcase" />
+              </div>
+              <div class="timeline-entry__header">
+                <h3>{{ w.role }}</h3>
+                <p>{{ w.period }}</p>
+              </div>
+              <div class="timeline-entry__content">
+                <h4>{{ w.company }}</h4>
+                <p v-for="d in w.description.split('\n')">{{ d }}</p>
+                <BadgeCollection v-if="w.badges" :badges="w.badges" />
+              </div>
             </div>
-            <div class="timeline-entry__header">
-              <h3>{{ w.role }}</h3>
-              <p>{{ w.period }}</p>
-            </div>
-            <div class="timeline-entry__content">
-              <h4>{{ w.company }}</h4>
-              <p v-for="d in w.description.split('\n')">{{ d }}</p>
-              <BadgeCollection v-if="w.badges" :badges="w.badges" />
-            </div>
-          </div>
+          </template>
         </div>
       </div>
     </div>

@@ -10,10 +10,16 @@ export default defineNuxtConfig({
       "@fortawesome/vue-fontawesome",
     ],
   },
+  compatibilityDate: "2026-02-18",
   css: [
     "@fortawesome/fontawesome-svg-core/styles.css",
     "@/assets/css/_global.scss",
   ],
+  nitro: {
+    prerender: {
+      routes: ["/llms.txt", "/llms-full.txt"],
+    },
+  },
   typescript: {
     strict: true,
   },

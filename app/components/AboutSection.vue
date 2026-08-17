@@ -46,6 +46,7 @@ import About from "~~/content/about.json";
 
       .lead {
         text-align: left;
+        text-wrap: pretty;
         padding-left: 13rem;
       }
     }

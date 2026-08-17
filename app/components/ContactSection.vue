@@ -40,6 +40,10 @@
 
 <style lang="scss" scoped>
 .contact {
+  .section-intro .lead {
+    text-wrap: pretty;
+  }
+
   .contact-info {
     font-family: "poppins-regular", sans-serif;
     text-align: center;

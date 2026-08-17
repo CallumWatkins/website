@@ -120,6 +120,7 @@ const swiperModules = [A11y, Scrollbar];
 
   &__description {
     color: var(--grey-12);
+    text-wrap: pretty;
     padding-inline: var(--padding);
     margin-bottom: 1rem;
   }

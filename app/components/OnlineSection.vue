@@ -42,6 +42,7 @@ import Online from "~~/content/online.json";
       > p {
         margin-bottom: 2rem;
         text-align: justify;
+        text-wrap: pretty;
       }
 
       .flair-container {

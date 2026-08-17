@@ -1,9 +1,27 @@
 [
   {
-    "role": "Full Stack Software Engineer",
-    "period": "February 2023 – Present",
+    "role": "Full-Stack Software Engineer",
+    "period": "August 2026 – Present",
+    "company": "Solve Intelligence",
+    "description": "At Solve Intelligence, I build software that empowers intellectual property professionals to navigate complex patent work with greater speed, clarity, and confidence. My work spans the product and platform, from user-facing features and APIs to the data, infrastructure, and operational systems behind them.",
+    "badges": [
+      "AWS",
+      "PostgreSQL",
+      "Python",
+      "FastAPI",
+      "Docker",
+      "React",
+      "TypeScript",
+      "Tailwind CSS",
+      "Celery",
+      "Terraform"
+    ]
+  },
+  {
+    "role": "Founding Engineer",
+    "period": "February 2023 – March 2026",
     "company": "Carter Labs",
-    "description": "At Carter Labs, I spearhead the creation of systems that provide sophisticated AI conversation and companionship to users worldwide. I am responsible for designing, engineering, testing, deploying, and maintaining these systems. In addition, I implement and continuously improve a suite of developer tooling, CI/CD pipelines, and monitoring solutions to streamline development processes and enhance the team’s capacity to deliver with confidence.\nMy work encompasses a broad spectrum of technologies to facilitate the end-to-end processing of user interactions. This includes leveraging AWS cloud infrastructure to architect scalable, resilient, and efficient systems, among which I develop a robust and idiomatic API that serves as the backbone for various client-facing and internal platforms.\nThrough my work here, I am honing my skills in working effectively in a fast-paced development environment, delivering high-quality results under tight deadlines.",
+    "description": "I joined Carter Labs as the second employee, working closely with the co-founders to scale its conversational AI product from early traction to more than one million users. I designed, engineered, tested, deployed, and maintained systems that delivered sophisticated AI conversation and companionship to users worldwide. I also implemented and continuously improved a suite of developer tooling, CI/CD pipelines, and monitoring solutions to streamline development and enhance the team’s capacity to deliver with confidence.\nMy work encompassed a broad spectrum of technologies involved in processing user interactions. This included leveraging AWS cloud infrastructure to architect scalable, resilient, and efficient systems, as well as developing a robust, idiomatic API that served as the backbone for client-facing and internal platforms.\nThe role strengthened my ability to work effectively in a fast-paced development environment and deliver high-quality results under tight deadlines.",
     "badges": [
       "AWS",
       "MongoDB",
@@ -12,23 +30,22 @@
       "Docker",
       "Nuxt",
       "TypeScript",
-      "SCSS",
-      "Git"
+      "SCSS"
     ]
   },
   {
     "role": "Software Developer & Accounting Clerk",
     "period": "July 2018 – February 2023",
     "company": "Accountancy Corporation in London",
-    "description": "Working at this organisation has awarded me valuable experience in the use of computer systems in the industry. I have had the opportunity to develop software to optimise workflows, including ingesting and parsing bank statements, managing sensitive customer information, and updating critical internal databases with the most up-to-date knowledge.",
-    "badges": ["Rust", "Vue.js", "Excel", "Netlify", "Git"]
+    "description": "Working at this organisation awarded me valuable experience in the use of computer systems in the industry. I developed software to optimise workflows, including ingesting and parsing bank statements, managing sensitive customer information, and updating critical internal databases with the most up-to-date knowledge.",
+    "badges": ["Rust", "Vue.js", "Excel", "Netlify"]
   },
   {
     "role": "Software Developer",
     "period": "September 2014 – June 2017",
     "company": "ACW Technologies",
     "description": "As co-founder of this non-profit software organisation, I managed all main operations including the design and development of all software, websites, and infrastructure.",
-    "badges": ["C#", ".NET", "WPF", "Git", "PHP", "Jekyll", "SQL", "Cloudflare"]
+    "badges": ["C#", ".NET", "WPF", "PHP", "Jekyll", "SQL", "Cloudflare"]
   },
   {
     "role": "Clerical Assistant",

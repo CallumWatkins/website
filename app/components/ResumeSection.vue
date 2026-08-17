@@ -24,7 +24,12 @@
               </div>
               <div class="timeline-entry__content">
                 <h4>{{ w.company }}</h4>
-                <p v-for="d in w.description.split('\n')">{{ d }}</p>
+                <p
+                  v-for="d in w.description.split('\n')"
+                  class="timeline-entry__description"
+                >
+                  {{ d }}
+                </p>
                 <BadgeCollection v-if="w.badges" :badges="w.badges" />
               </div>
             </div>
@@ -57,7 +62,10 @@
                 </template>
               </div>
               <template v-if="e.description">
-                <p v-for="d in e.description.split('\n')">
+                <p
+                  v-for="d in e.description.split('\n')"
+                  class="timeline-entry__description"
+                >
                   {{ d }}
                 </p>
               </template>
@@ -141,6 +149,10 @@ import Work from "~~/content/work.json";
         &__content {
           margin-left: 35%;
           padding-left: 60px;
+
+          .timeline-entry__description {
+            text-wrap: pretty;
+          }
 
           h4 {
             position: relative;

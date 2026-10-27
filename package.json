@@ -30,7 +30,7 @@
     "eslint": "^10.0.0",
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-vuejs-accessibility": "^2.5.0",
-    "nuxt": "^4.3.1",
+    "nuxt": "^4.6.3",
     "prettier": "^3.8.1",
     "sass": "^1.97.3",
     "schema-dts": "^1.1.5",
